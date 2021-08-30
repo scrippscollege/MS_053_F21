@@ -1,0 +1,46 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="10. Machine unlearning",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+IO [label="Between input and output"]
+EiC [label="Exercise in class"]
+LA [label="Learning algorithms"]
+ml5 [label="ml5.js library"]
+SC [label="Source code"]
+RAG [label="Reading \nAuto Chapter Generator"]
+EiC2 [label="Exercise in class"]
+MW [label="While()"]
+MX [label="MiniX: \nFinal Project"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; SU, RR}
+{rank=same;MX,LA}
+//graph
+GS -> SU -> ST;
+SU-> IO -> EiC;
+RR-> GS[dir=both, minlen=2];
+SU -> MW [dir=both];
+RR -> SU;
+EiC -> LA ;
+LA -> LA[dir=both];
+LA-> MW [dir=both];
+IO -> LA -> ml5 -> SC;
+SC -> RAG -> EiC2;
+ST -> MW -> Notes;
+GS, MW -> MX;
+ml5 -> RAG;
+RR -> FR;
+}

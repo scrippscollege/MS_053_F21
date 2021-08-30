@@ -1,0 +1,49 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="5. Auto-generator",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+EiC [label="Exercise in class: \n10 PRINT"]
+LA [label="Langton's Ant"]
+SC [label="Source code\n(Langton's Ant)"]
+RLA [label="Reading \nLangton's Ant"]
+AL [label="Two-dimensional arrays \n& nested for-loops
+"]
+EiC2 [label="Exercise in class"]
+MW [label="While()"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; RR, ST}
+{rank = same; RLA, SC}
+{rank = same; MX,EiC2}
+{rank = same; MW, LA}
+
+
+//graph
+GS -> SU -> ST -> EiC;
+EiC-> LA[minlen=2];
+LA -> SU [dir=both];
+GS -> MX;
+GS -> RR[dir=both];
+SU -> MW [dir=both];
+SC -> RLA [dir=none];
+RR -> MX, SU;
+LA -> SC, RLA -> EiC2;
+SC -> AL;
+ST -> MW -> Notes;
+MW -> MX;
+LA -> MW;
+RR -> FR;
+}

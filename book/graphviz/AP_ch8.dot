@@ -1,0 +1,51 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="8. Que(e)ry data",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+EiC [label="Exercise in class"]
+IP [label="Image processing: \nfetching, loading and display"]
+SC [label="Source code"]
+EiC2 [label="Exercise:\nAccesing web APIs\n(step by step)"]
+API [label="APIs"]
+QD [label="Que(e)rying data"]
+EiC3 [label="Exercise in class"]
+LP [label="LoadPixels()"]
+ER [label="Different types of bugs"]
+MW [label="While()"]
+MX [label="MiniX: \nWorking with APIs\n(in a group)"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; MW, Notes}
+{rank = same; RR, EiC, ST}
+{rank = same; MX, SC}
+{rank = same; API, QD}
+{rank = same; MW, EiC3, ER}
+
+//graph
+GS -> SU -> ST -> EiC;
+GS -> RR[dir=both, minlen=2];
+SU -> MW [dir=both];
+GS ->  MX;
+RR -> MX, SU;
+ST -> IP -> SC -> LP;
+IP -> LP;
+SC -> EiC2 -> API -> QD -> EiC3;
+QD -> ER -> MW;
+ST -> MW [dir=both];
+MW -> Notes;
+MW -> MX;
+RR -> FR;
+}

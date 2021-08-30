@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block page_class %}page{% endblock %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME }} - {{ page.title }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+    {{ translations.entry_hreflang(page) }}
+  {% endif %}
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/codemirror.css" type="text/css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/p5-widget-codemirror-theme.css" type="text/css" media="all" charset="utf-8">
+    <style>
+        h1 {
+            counter-reset: h1 {{ page.order }};
+        }
+        
+        /* .code--line--number { */
+        .code--line:before {
+            position: absolute;
+            right: calc(100% + .5em);
+            top: 0;
+            bottom: 0;
+            font-size: 80%;
+            border-right: 1px dotted lightgray;
+            padding-right: .75em;
+            content: attr(data-line-number);
+        }
+
+        .code--line {
+            display: block;
+            position: relative;
+            margin-left: 3em;
+            height: initial;
+            line-height: var(--line-height);
+            min-height: var(--line-height);
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+
+    {{ page.content }}
+
+    {% if page.modified %}
+        <p>
+        Last updated: {{ page.locale_modified }}
+        </p>
+    {% endif %}
+    <!-- <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/activateSnippets.js"></script> -->
+{% endblock %}
+
+{% block sketch %}
+    <section id="sketch--toggle--navbar">
+        <template>
+            <span class="sketch--toggle">interactive sketch</span>
+        </template>
+    </section>
+    {% if page.sketch %}
+        <section id="canvas">
+            <script type="text/p5" data-editor-layout="vertical" data-autoplay="autoplay"
+                src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.sketch }}"
+                {% if page.sketch_base_url %}
+                data-base-url="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.sketch_base_url }}"
+                {% endif %}
+                data-p5-path="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.p5 }}"
+                {% if page.requirements %}
+                    {% if page.requirements is string %}
+                    data-requirements="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.requirements }}"
+                    {% else %}
+                    data-requirements="{% for requirement in page.requirements %}{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ requirement }}{% if not loop.last %}, {% endif %}{% endfor %}"
+                    {% endif %}
+                {% endif %}>
+            </script>
+        </section>
+    {% else %}
+        <section id="canvas"></section>
+    {% endif %}
+{% endblock %}
+
+{% block extra_scripts %}
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/codemirror.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/addon/runmode.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/javascript.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/activateCodeblocks.js"></script>
+    <!-- <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/activateSketches.js"></script> -->
+    <script>
+        // Turn codeblocks into Codemirror codeblocks
+        activateCodeblocks();
+        // Set listeneres to activate executable sketches
+        // setActivateSketchListeners()
+
+        for (var i=0; i < document.links.length; i++) {
+          if (document.links[i].hostname != document.location.hostname) {
+            document.links[i].target = '_blank';
+          }
+        }
+
+        window.addEventListener('message', function (e) {
+            if (e.data && 'type' in e.data
+                && e.data.type == 'p5jsWidget::toggleFullscreen')
+            {
+                if (e.data.fullscreen) {
+                    document.body.dataset.sketchFullscreen = 'true';
+                    var canvas = document.getElementById('canvas'),
+                        top = canvas.getBoundingClientRect().top;
+
+                    if (top > 0) {
+                        window.scrollBy(0, top);
+                    }
+                }
+                else {
+                    delete document.body.dataset.sketchFullscreen;
+                }
+            }
+        });
+
+        // (function () {
+        //     var sketchToggle = document.querySelector('#sketch--toggle');
+
+        //     if (sketchToggle) {
+        //         sketchToggle.addEventListener('click', function () {
+        //             if ('sketchVisible' in document.body.dataset) {
+        //                 delete document.body.dataset.sketchVisible;
+        //             } else {
+        //                 document.body.dataset.sketchVisible = true;
+        //             }
+        //         });
+        //     }
+        // })();
+    </script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/activateAllSketches.js"></script>
+{% endblock %}

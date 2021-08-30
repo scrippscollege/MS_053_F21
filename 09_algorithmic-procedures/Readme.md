@@ -159,9 +159,11 @@ Group:
 
 ## Required reading
 
-* Taina Bucher, "The Multiplicity of Algorithims," *If…Then: Algorithmic Power and Politics* (Oxford: Oxford University Press, 2018), 19–40.
-* Christian Sandvig, "Seeing the Sort: The Aesthetic and Industrial Defense of ‘The Algorithm.’" *Journal of the New Media Caucus* (2015). <http://median.newmediacaucus.org/art-infrastructures-information/seeing-the-sort-the-aesthetic-and-industrial-defense-of-the-algorithm/
-* Nathan Ensmenger, "The Multiple Meanings of a Flowchart," *Information & Culture: A Journal of History* 51, no.3 (2016): 321-351, Project MUSE, doi:10.1353/lac.2016.0013.
+Taina Bucher, "[The Multiplicity of Algorithms](pdfs/The-Multiplicity-of-Algorithms_Taina-Bucher.pdf)," *If…Then: Algorithmic Power and Politics* (Oxford: Oxford University Press, 2018), 19–40.
+
+Christian Sandvig, "[Seeing the Sort: The Aesthetic and Industrial Defense of ‘The Algorithm.](http://median.newmediacaucus.org/art-infrastructures-information/seeing-the-sort-the-aesthetic-and-industrial-defense-of-the-algorithm/)’" *Journal of the New Media Caucus* (2015). 
+
+Nathan Ensmenger, "[The Multiple Meanings of a Flowchart](pdfs/ensmenger2016.pdf)," *Information & Culture: A Journal of History* 51, no.3 (2016): 321-351, Project MUSE.
 
 ## Further reading
 

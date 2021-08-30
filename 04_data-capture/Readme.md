@@ -329,20 +329,29 @@ This line of argument makes reference to the philosophy of Gilbert Simondon, to 
 
 ## Required reading
 
-* Shoshana Zuboff, "Shoshana Zuboff on Surveillance Capitalism | VPRO Documentary," <https://youtu.be/hIXhnWUmMvw>.
-* "p5.js examples - Interactivity 1," <https://p5js.org/examples/hello-p5-interactivity-1.html>.
-* "p5.js examples - Interactivity 2," <https://p5js.org/examples/hello-p5-interactivity-2.html>.
-* "p5 DOM reference," <https://p5js.org/reference/#group-DOM>.
-* Ulises A. Mejias and Nick Couldry, "Datafication," *Internet Policy Review* 8.4 (2019), <https://policyreview.info/concepts/datafication>. 
+Shoshana Zuboff, "[Shoshana Zuboff on Surveillance Capitalism](https://youtu.be/hIXhnWUmMvw) | VPRO Documentary," .
+
+"[p5.js examples - Interactivity 1](https://p5js.org/examples/hello-p5-interactivity-1.html)," .
+
+"[p5.js examples - Interactivity 2](https://p5js.org/examples/hello-p5-interactivity-2.html)," .
+
+"[p5 DOM reference](https://p5js.org/reference/#group-DOM),".
+
+Ulises A. Mejias and Nick Couldry, "[Datafication](https://policyreview.info/concepts/datafication)," *Internet Policy Review* 8.4 (2019). 
 
 ## Further reading
 
-*	Søren Pold, "Button," in Fuller, ed., *Software Studies*.
-* Carolin Gerlitz and Anne Helmond, "The Like Economy: Social Buttons and the Data-Intensive Web," *New Media & Society* 15, no. 8, December 1 (2013): 1348–65.
-*	Christian Ulrik Andersen and Geoff Cox, eds., *A Peer-Reviewed Journal About Datafied Research* 4, no. 1 (2015), <https://aprja.net//issue/view/8402>.
-* Audun M. Øygard, "clmtrackr - Face tracking JavaScript library," <https://github.com/auduno/clmtrackr>.
-*	Daniel Shiffman, *HTML / CSS/DOM - p5.js Tutorial* (2017), <https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX>.
-*	Tiziana Terranova, "Red Stack Attack! Algorithms, Capital and the Automation of the Common," *EuroNomade* (2014), <http://www.euronomade.info/?p=2268>.
+Søren Pold, "[Button](pdfs/button_Soren-Pold.pdf)," in Fuller, ed., *Software Studies*.
+
+Carolin Gerlitz and Anne Helmond, "[The Like Economy: Social Buttons and the Data-Intensive Web](pdfs/gerlitz2013.pdf)," *New Media & Society* 15, no. 8, December 1 (2013): 1348–65.
+
+Christian Ulrik Andersen and Geoff Cox, eds., [*A Peer-Reviewed Journal About Datafied Research* 4, no. 1](https://aprja.net//issue/view/8402) (2015).
+
+Audun M. Øygard, "[clmtrackr - Face tracking JavaScript library,](https://github.com/auduno/clmtrackr)".
+
+Daniel Shiffman, [*HTML / CSS/DOM - p5.js Tutorial*](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX) (2017).
+
+Tiziana Terranova, "[Red Stack Attack! Algorithms, Capital and the Automation of the Common](http://www.euronomade.info/?p=2268)," *EuroNomade* (2014).
 
 ## Notes
 

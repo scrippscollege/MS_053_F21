@@ -1,0 +1,491 @@
+digraph G {
+
+graph[overlap=false]
+node[fontname="Hershey-Noailles-help-me", fontsize="10pt"]
+
+	subgraph cluster_1 {
+    node [shape=ellipse];
+    label = "1. Getting started";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+    SU1 [label="setup()"]
+    ST1 [label="start()"]
+    WE1 [label="Working environment"]
+    p51 [label="p5.js"]
+    CE1 [label="Code editor"]
+    MFP1 [label="My first program"]
+    EiC1 [label="Exercise in class"]
+    RC1 [label="Reading the web console \n'Hello World'"]
+    RG1 [label="Reading the \nreference guide"]
+    Git1 [label="Git"]
+    MW1 [label="While()"]
+    MX1 [label="MiniX: \nRunMe and ReadMe"]
+    RR1 [label="Required reading"]
+    FR1 [label="Further reading"]
+    Notes1 [label="Notes"]
+
+    {rank = same; MFP1, WE1}
+
+    //graph
+    SU1 -> ST1;
+    ST1 -> WE1;
+    WE1 -> p51;
+    WE1 -> CE1;
+    WE1 -> Git1;
+    ST1 -> MFP1;
+    MFP1 -> EiC1;
+    MFP1 -> RC1;
+    MFP1 -> RG1;
+    SU1 -> MW1 [dir=both];
+    MW1 -> MX1, Notes1;
+    RR1 -> MX1, SU1;
+    Git1 -> MW1;
+    RG1 -> MX1;
+    p51 -> CE1 [dir=both];
+    WE1 -> MFP1;
+    p51 -> RG1;
+    RR1 -> FR1;
+	}
+
+	subgraph cluster_2 {
+    node [shape=ellipse];
+    label = "2. Variable geometry";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+    SU2 [label="setup()"]
+    ST2 [label="start()"]
+    SC2 [label="Source code"]
+    CO2 [label="Coordinate"]
+    EiC2 [label="Exercise in class"]
+    VB2 [label="Variables"]
+    YVB2 [label="Why use variables?"]
+    OF2 [label="Other functions"]
+    BAO2 [label="Basic arithmetic operators"]
+    CS2 [label="Conditional structures"]
+    RO2 [label="Relational operators"]
+    DiC2 [label="Discussion in class"]
+    MW2 [label="While()"]
+    MX2 [label="MiniX: \nGeometric emoji"]
+    RR2 [label="Required reading"]
+    FR2 [label="Further reading"]
+    Notes2 [label="Notes"]
+
+    //rank
+    {rank = same; MW2, Notes2}
+    {rank = same; ST2, RR2}
+
+    //graph
+
+    SU2 -> MW2 [dir=both];
+    MW2 -> VB2[dir=both];
+    RO2 -> BAO2[dir=none];
+     SU2 -> ST2 -> SC2;
+    SC2 -> CO2 -> EiC2;
+    SC2 -> VB2 -> YVB2;
+    SC2 -> OF2 -> BAO2;
+    SC2 -> CS2 -> RO2;
+    EiC2, VB2, CS2 -> DiC2;
+    ST2 -> MW2 -> Notes2;
+    MW2 -> MX2;
+    RR2 -> MX2, SU2;
+    RR2 -> FR2;
+	}
+
+	subgraph cluster_3 {
+    node [shape=ellipse];
+    label = "3. Infinite loops";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+    SU3 [label="setup()"]
+    ST3 [label="start()"]
+    DE3 [label="Exercise in class (Decode)"]
+    SC3 [label="Source code"]
+    FN3 [label="Function"]
+    EiC3 [label="Exercise in class"]
+    TR3 [label="Transform"]
+    PP3 [label="push() and pop()"]
+    EiC33 [label="Exercise in class"]
+    AP3 [label="Reading \nAsterisk Painting"]
+    SC33 [label="Source code"]
+    EiC333 [label="Exercise in class"]
+    AR3 [label="Arrays"]
+    CS3 [label="Conditional statements"]
+    LO3 [label="Loops"]
+    MW3 [label="While()"]
+    MX3 [label="MiniX: \nDesigning a throbber"]
+    RR3 [label="Required reading"]
+    FR3 [label="Further reading"]
+    Notes3 [label="Notes"]
+
+    //rank
+    {rank = same; SU3, ST3}
+    {rank = same; MW3, Notes3}
+    {rank = same; FR3, SC3}
+
+    //graph
+    SU3 -> ST3 -> SC3 -> DE3;
+    SU3 -> MW3 [dir=both];
+    RR3 -> MX3, SU3;
+    SC3 -> FN3 -> EiC3;
+    TR3->PP3;
+    SC3 -> TR3 -> EiC33;
+    EiC3, EiC33 -> AP3 -> SC33 -> EiC333
+    SC33 -> AR3;
+    SC33 -> CS3;
+    SC33 -> LO3;
+    ST3, LO3 -> MW3 -> Notes3;
+    MW3 -> MX3;
+    RR3 -> FR3;
+  }
+
+  subgraph cluster_4 {
+    node [shape=ellipse];
+    label = "4. Data capture";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+    SU4 [label="setup()"]
+    ST4 [label="start()"]
+    DE4 [label="Exercise in class: \nDecode"]
+    SC4 [label="Source code"]
+    DOM4 [label="DOM elements:\n creating and styling a button"]
+    MC4 [label="Mouse capture"]
+    KC4 [label="Keyboard capture"]
+    AC4 [label="Audio capture"]
+    FT4 [label="Video/Face capture"]
+    EiC4 [label="Exercise in class"]
+    CC4 [label="The concept of capture"]
+    WA4 [label="Web analytics and heatmap"]
+    FE4 [label="Form elements"]
+    ML4 [label="Metrics of likes"]
+    VD4 [label="Voice and audio data"]
+    HT4 [label="Health tracker"]
+    MW4 [label="While()"]
+    MX4 [label="MiniX: \nCapture ALL"]
+    RR4 [label="Required reading"]
+    FR4 [label="Further reading"]
+    Notes4 [label="Notes"]
+
+    //rank
+    {rank = same; MX4, SC4}
+    {rank = same; MW4, EiC4}
+
+    //graph
+    SU4 -> ST4 -> DE4 -> SC4;
+    SC4 -> DE4;
+    SU4 -> MW4 [dir=both];
+    RR4 -> MX4, SU4;
+    SC4 -> DOM4;
+    SC4 -> MC4, KC4;
+    SC4 -> AC4, FT4;
+    DOM4 -> EiC4;
+    MC4, KC4, AC4, FT4 -> EiC4 ;
+    EiC4-> CC4;
+    CC4 -> WA4, FE4;
+    CC4 ->  ML4, VD4, HT4;
+    ST4, CC44 -> MW4 -> Notes4;
+    MW4 -> MX4;
+    RR4 -> FR4;
+  }
+
+  subgraph cluster_5 {
+    node [shape=ellipse];
+    label = "5. Auto-generator";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+
+    SU5 [label="setup()"]
+    ST5 [label="start()"]
+    EiC5 [label="Exercise in class: \n10 PRINT"]
+    LA5 [label="Langton's Ant"]
+    SC5 [label="Source code\n(Langton's Ant)"]
+    RLA5 [label="Reading \nLangton's Ant"]
+    AL5 [label="Two-dimensional arrays \n& nested for-loops
+    "]
+    EiC55 [label="Exercise in class"]
+    MW5 [label="While()"]
+    MX5 [label="MiniX: \nA Generative Program"]
+    RR5 [label="Required reading"]
+    FR5 [label="Further reading"]
+    Notes5 [label="Notes"]
+
+    //rank
+    {rank = same; RR5, ST5}
+    {rank = same; RLA5, SC5}
+    {rank = same; MX5,EiC55}
+    {rank = same; MW5, LA5}
+
+    //graph
+    SU5 -> ST5 -> EiC5;
+    EiC5-> LA5[minlen=2];
+    LA5 -> SU5 [dir=both];
+    SU5 -> MW5 [dir=both];
+    SC5 -> RLA5 [dir=none];
+    RR5 -> MX5, SU5;
+    LA5 -> SC5, RLA5 -> EiC55;
+    SC5 -> AL5;
+    ST5 -> MW5 -> Notes5;
+    MW5 -> MX5;
+    LA5 -> MW5;
+    RR5 -> FR5;
+  }
+
+  subgraph cluster_6 {
+    node [shape=ellipse];
+    label = "6. Object abstraction";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+
+    SU6 [label="setup()"]
+    ST6 [label="start()"]
+    DE6 [label="Exercise in class: \nDecode"]
+    SC6 [label="Source code"]
+    CL6 [label="class"]
+    OO6 [label="Objects"]
+    COC6 [label="Class-Object creation"]
+    EiC6 [label="Exercise in class"]
+    FN6 [label="Further notes"]
+    MW6 [label="While()"]
+    MX6 [label="MiniX: \nGames with objects"]
+    RR6 [label="Required reading"]
+    FR6 [label="Further reading"]
+    Notes6 [label="Notes"]
+
+    //rank
+    {rank = same; EiC6,FN6}
+    {rank = same; MX6,DE6}
+    {rank = same; MW6,ST6}
+
+    //graph
+    SU6 -> ST6 -> DE6 -> SC6;
+    SU6 -> MW6 [dir=both];
+    RR6 -> MX6, SU6;
+    SC6 -> {CL6, OO6, COC6} -> EiC6 -> FN6;
+    ST6 -> MW6 -> Notes6;
+    MW6 -> MX6;
+    COC6 -> MW6;
+    RR6 -> FR6;
+  }
+
+  subgraph cluster_7 {
+    node [shape=ellipse];
+    label = "7. Vocable code";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+
+    SU7 [label="setup()"]
+    ST7 [label="start()"]
+    DE7 [label="Exercise in class: \n(Decode)"]
+    TX7 [label="Textuality"]
+    CO7 [label="Conditional structure"]
+    JS7 [label="JSON"]
+    SC7 [label="Source Code"]
+    EiC7 [label="Exercise in class"]
+    MW7 [label="While()"]
+    MX7 [label="MiniX: \nE-lit"]
+    RR7 [label="Required reading"]
+    FR7 [label="Further reading"]
+    Notes7 [label="Notes"]
+
+    //rank
+    {rank = same; RR7, SC7}
+    {rank = same; FR7, TX7}
+
+    //graph
+    SU7 -> ST7 -> DE7;
+    SU7 -> MW7 [dir=both];
+    RR7 -> MX7, SU7;
+    DE7 -> TX7;
+    TX7 -> SC7[dir=both];
+    SC7 -> EiC7;
+    SC7 -> CO7, JS7[dir=both];
+    ST7 -> MW7 [dir=both];
+    JS7 -> MX7;
+    MW7 -> MX7, Notes7;
+    DE7 -> SC7[dir=both];
+    CO7 -> MW7[dir=both];
+    ST7 -> EiC7;
+    RR7 -> FR7;
+  }
+  subgraph cluster_8 {
+    node [shape=ellipse];
+    label = "8. Que(e)ry data";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+
+    SU8 [label="setup()"]
+    ST8 [label="start()"]
+    EiC8 [label="Exercise in class"]
+    IP8 [label="Image processing: \nfetching, loading and display"]
+    SC8 [label="Source code"]
+    EiC88 [label="Exercise: \nAccesing web APIs (step by step)"]
+    API8 [label="APIs"]
+    QD8 [label="Que(e)rying data"]
+    EiC888 [label="Exercise in class"]
+    LP8 [label="LoadPixels()"]
+    ER8 [label="Different types of bugs"]
+    MW8 [label="While()"]
+    MX8 [label="MiniX: \nWorking with APIs\n(in a group)"]
+    RR8 [label="Required reading"]
+    FR8 [label="Further reading"]
+    Notes8 [label="Notes"]
+
+    //rank
+    {rank = same; MW8, Notes8}
+    {rank = same; RR8, EiC8, ST8}
+    {rank = same; MX8, SC8}
+    {rank = same; API8, QD8}
+    {rank = same; MW8, EiC888, ER8}
+
+    //graph
+    SU8 -> ST8 -> EiC8;
+    SU8 -> MW8 [dir=both];
+    RR8 -> MX8, SU8;
+    ST8 -> IP8 -> SC8 -> LP8;
+    IP8 -> LP8;
+    SC8 -> EiC88 -> API8 -> QD8 -> EiC888;
+    QD8 -> ER8 -> MW8;
+    ST8 -> MW8 [dir=both];
+    MW8 -> Notes8;
+    MW8 -> MX8;
+    RR8 -> FR8;
+  }
+
+  subgraph cluster_9 {
+    node [shape=ellipse];
+    label = "9. Algorithmic procedures";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="10pt";
+    //color=white;
+
+    SU9 [label="setup()"]
+    ST9 [label="start()"]
+    DiC9 [label="Discussion in class"]
+    EiC9 [label="Exercise in class"]
+    FC9 [label="Flowcharts"]
+    EiC19 [label="Exercise 1"]
+		EiC29 [label="Exercise 2"]
+    AM9 [label="Flowcharts as an artistic medium"]
+    MW9 [label="While()"]
+    MX9 [label="MiniX: \nFlowcharts"]
+    RR9 [label="Required reading"]
+    FR9 [label="Further reading"]
+    Notes9 [label="Notes"]
+
+    //rank
+    {rank = same; RR9, SU9}
+		{rank = same; MW9, Notes9}
+
+    //graph
+    SU9 -> ST9;
+    ST9 -> DiC9 -> FC9;
+    ST9 -> FC9 ;
+    FC9 -> EiC9 -> EiC19 -> EiC29;
+		EiC9 -> AM9 -> MW9;
+    MW9 -> Notes9;
+    MW9 -> FC9[dir=both]
+    SU9 -> MW9 [dir=both];
+    RR9 -> SU9, MW9;
+    FC9 -> MX9;
+    RR9 -> FR9;
+  }
+
+  subgraph cluster_10 {
+      node [shape=ellipse];
+      label = "10. Machine unlearning";
+    fontname="Hershey-Noailles-help-me";
+    labeljust="l";
+    margin="12pt";
+    style=dashed;
+    penwidth=0.5;
+    fontsize="12pt";
+      //color=white;
+      SU10 [label="setup()"]
+      ST10 [label="start()"]
+      IO10 [label="Between input and output"]
+      EiC10 [label="Exercise in class"]
+      LA10 [label="Learning algorithms"]
+      ml510 [label="ml5.js library"]
+      SC10 [label="Source code"]
+      RAG10 [label="Reading \nAuto Chapter Generator"]
+      EiC1010 [label="Exercise in class"]
+      MW10 [label="While()"]
+      MX10 [label="MiniX: \nFinal Project"]
+      RR10 [label="Required reading"]
+      FR10 [label="Further reading"]
+      Notes10 [label="Notes"]
+
+      //rank
+      {rank = same; SU10, RR10}
+      {rank=same;MX10,LA10}
+      //graph
+      SU10 -> ST10;
+      SU10-> IO10 -> EiC10;
+      SU10 -> MW10 [dir=both];
+      RR10 -> SU10;
+      EiC10 -> LA10 ;
+      LA10 -> LA10[dir=both];
+      LA10-> MW10 [dir=both];
+      IO10 -> LA10 -> ml510 -> SC10;
+      SC10 -> RAG10 -> EiC1010;
+      ST10 -> MW10 -> Notes10;
+      MW10 -> MX10;
+      ml510 -> RAG10;
+      RR10 -> FR10;
+  }
+
+  AW [label="Afterword\n(Recurrent Imaginaries)"]
+  PF [label="Preface"]
+  DN [label="Design notes"]
+  {rank = same; PF, DN}
+  PF -> DN -> AW;
+  PF -> SU1,SU2,SU3,SU4,SU5,SU6,SU7,SU8,SU9,SU10 -> AW;
+  PF -> AW;
+  MX2,MX4,MX8 -> MX10 [dir=both];
+  MW3 -> MW5[dir=both];
+  MX2 -> MX6[dir=both];
+  MX1 -> MX9;
+}

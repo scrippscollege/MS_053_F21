@@ -383,10 +383,13 @@ To conclude this chapter, and our "queer commentary"[^berlant] on the making of 
 
 ## Required reading
 
-* Geoff Cox and Alex McLean, "Vocable Code," in *Speaking Code* (Cambridge, MA: MIT Press, 2013), 17-38.
-* Allison Parrish, "Text and Type" (2019), <https://creative-coding.decontextualize.com/text-and-type/>.
-* Daniel Shiffman, "10.2: What is JSON? Part I - p5.js Tutorial" (2017), <https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r>.
-* Daniel Shiffman, "10.2: What is JSON? Part II - p5.js Tutorial" (2017), <https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r>.
+Geoff Cox and Alex McLean, "[Vocable Code](pdfs/vocable-code_Cox+McLean.pdf)," in *Speaking Code* (Cambridge, MA: MIT Press, 2013), 17-38.
+
+Allison Parrish, "[Text and Type](https://creative-coding.decontextualize.com/text-and-type/)" (2019).
+
+Daniel Shiffman, "[10.2: What is JSON? Part I - p5.js Tutorial](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r)" (2017).
+
+Daniel Shiffman, "[10.2: What is JSON? Part II - p5.js Tutorial](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r)" (2017).
 
 ## Further reading
 

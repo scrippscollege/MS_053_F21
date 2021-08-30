@@ -1,0 +1,25 @@
+digraph D {
+
+node[fontname="Hershey-Noailles-help-me"]
+edge[fontname="Hershey-Noailles-help-me"]
+
+
+A [shape=circle; label="start";style=filled,color=lightgrey]
+B [shape=box; label="initialize\na list of emojis "]
+C [shape=diamond; label="loop through\n each emoji\n DONE?"]
+D [shape=circle; label="end";style=filled,color=lightgrey]
+E [shape=box; label="print/log the emoji\n (on the console screen)"]
+F [shape=box; label="go to\nthe next emoji"]
+G [label="", fixedsize="false", width=0, height=0, shape=none]
+
+//rank
+{rank = same; D, C}
+
+//graph
+A -> B [minlen=0.5];
+B -> G[minlen=0.5,arrowhead=None];
+G -> C[minlen=0.5];
+C -> D [label="YES"];
+C -> E [label="  NO",minlen=1];
+E -> F -> G;
+}

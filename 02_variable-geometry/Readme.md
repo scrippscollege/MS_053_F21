@@ -323,9 +323,11 @@ Explore shapes, geometries, and other related syntax (via p5.js references) and 
 
 ## Further reading
 
-* Crystal Abidin and Joel Gn, eds., "Histories and Cultures of Emoji Vernaculars," *First Monday* 23, no. 9, September (2018), <https://firstmonday.org/ojs/index.php/fm/issue/view/607>.
-* Christian Ulrik Andersen and Geoff Cox, eds., *A Peer-Reviewed Journal About Machine Feeling* 8, no. 1 (2019), <https://aprja.net//issue/view/8133>.
-* Derek Robinson, "Variables," in Matthew Fuller, ed., *Software Studies: A Lexicon* (Cambridge, MA: MIT Press, 2008).
+Crystal Abidin and Joel Gn, eds., "[Histories and Cultures of Emoji Vernaculars](https://firstmonday.org/ojs/index.php/fm/issue/view/607)," *First Monday* 23, no. 9, September (2018)
+
+Christian Ulrik Andersen and Geoff Cox, eds., *[A Peer-Reviewed Journal About Machine Feeling](https://aprja.net//issue/view/8133)* 8, no. 1 (2019).
+
+Derek Robinson, "[Variable](pdfs/Derek-Robinson_Variable.pdf)," in Matthew Fuller, ed., *Software Studies: A Lexicon* (Cambridge, MA: MIT Press, 2008).
 
 ## Notes
 

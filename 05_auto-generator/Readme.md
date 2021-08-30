@@ -190,7 +190,7 @@ The customized function `drawGrid()` is slightly different from what we have dis
 3. In simulating living systems — such as the complex behavior of insects — there seems to be a focus on process over outcome. Let's discuss the following questions:
   * Can you think of, and describe, other systems and processes that exhibit emergent behavior?
   * How would you understand autonomy in this context?[^Watz] To what extent do you consider the machine to be an active agent in generative systems? What are the implications for wider culture?
-</div>
+  </div>
 
 ## While()
 
@@ -262,9 +262,11 @@ Artist David Link built a functional replica of both the hardware and the origin
 
 ## Required reading
 
-* Nick Montfort et al. "Randomness," *10 PRINT CHR$(205.5+RND(1)); : GOTO 10*, <https://10print.org/> (Cambridge, MA: MIT Press, 2012), 119-146.
-* Daniel Shiffman, "p5.js - 2D Arrays in Javascript," *Youtube*, <https://www.youtube.com/watch?v=OTNpiLUSiB4>.
-* Jon, McCormack et al. “Ten Questions Concerning Generative Computer Art.” *Leonardo* 47, no. 2, 2014: 135–141.
+Nick Montfort et al. "Randomness," *[10 PRINT CHR$(205.5+RND(1)); : GOTO 10](https://10print.org/)* (Cambridge, MA: MIT Press, 2012), 119-146.
+
+Daniel Shiffman, "[p5.js - 2D Arrays in Javascript](https://www.youtube.com/watch?v=OTNpiLUSiB4)," *Youtube*.
+
+Jon, McCormack et al. “[Ten Questions Concerning Generative Computer Art](pdfs/mccormack2014.pdf).” *Leonardo* 47, no. 2, 2014: 135–141.
 
 ## Further reading
 

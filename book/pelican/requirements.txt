@@ -1,0 +1,5 @@
+pelican
+Markdown
+https://github.com/gijsdeheij/markdown-figures/archive/master.zip
+bs4
+typogrify

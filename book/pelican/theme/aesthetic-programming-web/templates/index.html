@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block page_class %}home{% endblock %}
+{% block content %}
+<section id="content">
+    <div id="frontpage--links">
+        <a href="https://gitlab.com/aesthetic-programming/book">Git repository</a><br /><br />
+        <a href="http://www.openhumanitiespress.org/books/titles/aesthetic-programming/">Buy a hardcopy of the book</a><br />
+        <a href="http://openhumanitiespress.org/books/download/Soon-Cox_2020_Aesthetic-Programming.pdf">Download as PDF</a><br />
+        <a href="https://gitlab.com/aesthetic-programming/book/-/blob/master/News.md">NEWS</a>
+
+    </div>
+    {% block content_title %}
+    {% endblock %}
+    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/coverGraph.svg" class="coverGraph" />
+    <section class="home--left">
+        <h1>
+            Aesthetic Programming
+        </h1>
+        <h2>
+            A Handbook of Software Studies
+        </h2>
+        <h2>Winnie Soon &amp; Geoff Cox</h2>
+        <p>
+            The book explores the technical as well as cultural imaginaries of programming from its insides. It follows the principle that the growing importance of software requires a new kind of cultural thinking — and curriculum — that can account for, and with which to better understand the politics and aesthetics of algorithmic procedures, data processing and abstraction. It takes a particular interest in power relations that are relatively under-acknowledged in technical subjects, concerning class and capitalism, gender and sexuality, as well as race and the legacies of colonialism. This is not only related to the politics of representation but also nonrepresentation: how power differentials are implicit in code in terms of binary logic, hierarchies, naming of the attributes, and how particular worldviews are reinforced and perpetuated through computation. Using p5.js, it introduces and demonstrates the reflexive practice of *aesthetic programming*, engaging with learning to program as a way to understand and question existing technological objects and paradigms, and to explore the potential for reprogramming wider eco-socio-technical systems. The book itself follows this approach, and is offered as a computational object open to modification and reversioning.
+        </p>
+    </section>
+    <section class="home--right">
+        <ul id="page-list">
+            {% for page in pages: %}
+                {% if page.show_in_menu == True or page.show_in_menu.lower == 'true' %}
+                    <li>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </section>
+</section><!-- /#content -->
+{% endblock content %}
+{% block sketch %}
+
+{% endblock sketch %}

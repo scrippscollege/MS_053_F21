@@ -411,10 +411,13 @@ Use loops and any one of the transformational functions to redesign and program 
 
 ## Further reading
 
-* Wolfgang Ernst, *Chronopoetics: The Temporal Being and Operativity of Technological Media* (London: Rowman & Littlefield International, 2016), 63-95.
-* Winnie Soon, “Throbber: Executing Micro-temporal Streams,” *Computational Culture* 7, October 21 (2019), http://computationalculture.net/throbber-executing-micro-temporal-streams/.
-*	Wilfried Hou Je Bek, "Loop," in Fuller, ed., *Software Studies*.
-* Derek Robinson, "Function," in Fuller, ed., *Software Studies*.
+Wolfgang Ernst, *[Chronopoetics: The Temporal Being and Operativity of Technological Media](pdfs/chronopoetics.pdf)* (London: Rowman & Littlefield International, 2016), 63-95.
+
+Winnie Soon, “[Throbber: Executing Micro-temporal Streams](http://computationalculture.net/throbber-executing-micro-temporal-streams/),” *Computational Culture* 7, October 21 (2019).
+
+Wilfried Hou Je Bek, "[Loop](pdfs/hou-je-bek_loop.pdf)," in Fuller, ed., *Software Studies*.
+
+Derek Robinson, "[Function](pdfs/function_derek-robinson.pdf)," in Fuller, ed., *Software Studies*.
 
 ## Notes
 

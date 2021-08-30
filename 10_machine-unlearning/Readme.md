@@ -274,7 +274,6 @@ All this deserves longer discussion that there simply isn't space for in these c
 This sense of future possibilities is also where we would say Mackenzie’s work is particularly valuable as he devotes attention to specific algorithms and data practices to understand the particularity of human-machine relations, and their transformations, and not least to emphasize the uncertainties and contingencies at work in these processes. In other words, machine learning is by no means simply deterministic (as we have seen in the exercises for this chapter) but is endlessly subject to revision and modification, and by its very nature is process-driven. It is also variably applied across disciplines and fields of practice, across open source platforms and communities of interest, endlessly transforming itself, and being transformed along the way.[^Learners3] This serves to demonstrate how there is more to a program than simply its source code. There is a whole range of recursive operations that render the various processes transformative in multiple ways.[^Learners4] The question becomes to what extent this different mode of coding for machine learning leads to a different mode of knowledge production, and transforms human-machine relations. When it comes to the book as a whole, which alternative knowledge and aesthetic practices emerge as a consequence?
 
 <div class="section exercise" markdown=1>
-
 ## MiniX: final project
 
 Aesthetic programming is a critical-technical practice. It explores the practice of reading, writing, and building, as well as thinking with, and understanding the complex computational procedures that underwrite our experiences and realities. To address these intersections of practice we have worked with fundamental concepts of programming as the starting point for further reflection — considering the precision and ambiguity of technical vocabulary as well as specific computational practices — thereby laying the groundwork for further understanding of how cultural phenomena are constructed and operationalized.
@@ -309,9 +308,11 @@ The ReadMe should address the following questions with the help of your source c
 
 ## Required reading
 
-* Ruha Benjamin, "Are Robots Racist: Reimagining the Default Settings of Technology and Society," lecture (2019), <https://www.dropbox.com/s/j80s8kjm63erf70/Ruha%20Benjamin%20Guest%20Lecture.mp4>.
-* Geoff Cox, "Ways of Machine Seeing," *Unthinking Photography* (2016), <https://unthinking.photography/articles/ways-of-machine-seeing>.
-* Yuval Noah Harari, Audrey Tang, and Puja Ohlhaver, "To Be or Not to Be Hacked? The Future of Democracy, Work, and Identity," *RADICALxChange* (2020), <https://www.youtube.com/watch?v=tRVEY95cI0o>.
+Ruha Benjamin, "[Are Robots Racist: Reimagining the Default Settings of Technology and Society](https://www.dropbox.com/s/j80s8kjm63erf70/Ruha%20Benjamin%20Guest%20Lecture.mp4)," lecture (2019).
+
+Geoff Cox, "[Ways of Machine Seeing](https://unthinking.photography/articles/ways-of-machine-seeing)," *Unthinking Photography* (2016).
+
+Yuval Noah Harari, Audrey Tang, and Puja Ohlhaver, "[To Be or Not to Be Hacked? The Future of Democracy, Work, and Identity](https://www.youtube.com/watch?v=tRVEY95cI0o)," *RADICALxChange* (2020).
 
 ## Further reading
 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{%if FEED_ATOM_URL %}{{ FEED_ATOM_URL }}{% else %}{{ FEED_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_RSS_URL %}{{ FEED_RSS_URL }}{% else %}{{ FEED_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_ATOM_URL %}{{ CATEGORY_FEED_ATOM_URL.format(slug=category.slug) }}{% else %}{{ CATEGORY_FEED_ATOM.format(slug=category.slug) }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{% if CATEGORY_FEED_RSS_URL %}{{ CATEGORY_FEED_RSS_URL.format(slug=category.slug) }}{% else %}{{ CATEGORY_FEED_RSS.format(slug=category.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_ATOM_URL %}{{ TAG_FEED_ATOM_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_ATOM.format(slug=tag.slug) }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_RSS.format(slug=tag.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+
+
+
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/reset.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codehilite.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/shared.css" type="text/css" media="all" charset="utf-8">
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/styles.css" type="text/css" media="all" charset="utf-8">
+        {% endblock head %}
+
+        {% block extra_css %}
+        {% endblock %}
+
+
+</head>
+
+<body class="{% block page_class %}{% endblock %}">
+    <header id="banner" class="body">
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+    </header>
+    <nav id="menu">
+        <ul>
+        {% if DISPLAY_PAGES_ON_MENU %}
+            {% for p in pages %}
+                {% if p.show_in_menu == True or p.show_in_menu.lower == 'true'%}
+                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        <li class="spacer"></li>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+        {% endif %}
+        </ul>
+    </nav><!-- /#menu -->
+
+    <main {% block attr %} {% endblock %}>
+        {% block content %}
+        {% endblock %}
+    </main> 
+    
+    <section class="right">
+        {% block sketch %}
+        {% endblock %}
+    </section>
+
+
+
+<!-- 
+
+    <script  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        pad = "http://pads.osp.kitchen/p/aesthetic-programming.css";
+
+        $(document).ready(function(){
+            setTimeout(function(){
+                $("#styles").load(pad + "/export/txt", function(){
+                });
+            });
+        });
+    </script>
+    <style type="text/css" media="all" id="styles" > </style>
+ -->
+
+    <!-- <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script> -->
+
+    <script>
+        (function () {
+            var header = document.querySelector('header'),
+                nav = document.querySelector('nav');
+            header.addEventListener('mouseenter', function () {
+                nav.dataset.active = 'true';
+            });
+            nav.addEventListener('mouseleave', function () {
+                delete nav.dataset.active;
+            });
+        })();
+    </script>
+
+    <script>
+        function Hsection(e, i, HX){
+            if(e.tagName == "H2") {
+                // create a new numbered section
+                section = document.createElement('section');
+                section.classList.add('section');
+                section.setAttribute('id', 'section' + i);
+                e.parentNode.insertBefore(section, e.nextSibling);
+
+                // add a numbered class to elements until the next h2
+                while(e.nextElementSibling != null && e.nextElementSibling.tagName != HX) {
+                    classe = "section-" + i;
+                    e.classList.add(classe);
+                    e.nextElementSibling.classList.add(classe);
+                    e = e.nextElementSibling;
+                }
+
+                // we put all numbered elements in dedicated section
+                items = document.getElementsByClassName('section-' + i);
+                
+                for (var i=0; i < items.length; i++) {
+                    section.appendChild(items[i])
+                }
+            }
+            if(e.tagName == "H3") {
+                subsection = document.createElement('div');
+                subsection.classList.add('subsection');
+                subsection.setAttribute('id', 'subsection' + i);
+                e.parentNode.insertBefore(subsection, e.nextSibling);
+
+                // add a numbered class to elements until the next h2
+                while(e.nextElementSibling != null && e.nextElementSibling.tagName != HX) {
+                    classe = "subsection-" + i;
+                    e.classList.add(classe);
+                    e.nextElementSibling.classList.add(classe);
+                    e = e.nextElementSibling;
+                }
+
+                // we put all numbered elements in dedicated section
+                items = document.getElementsByClassName('subsection-' + i);
+
+                for (var i=0; i < items.length; i++) {
+                    subsection.appendChild(items[i])
+                }
+            }
+        }
+
+
+        (function() {
+
+            // AUTOMATIC SECTION WRAPPING
+            h2s = document.querySelectorAll("h2");
+            h3s = document.querySelectorAll("h3");
+
+            for (var i=0; i < h2s.length; i++) {
+                Hsection(h2s[i], i, "H2");
+            }
+
+            for (var i=0; i < h3s.length; i++) {
+                Hsection(h3s[i], i, "H3");
+            }
+
+            // ADD <FIGURE> CLASSES
+            function figureAddClass(className){
+                elts = document.querySelectorAll("img." + className);
+                for (var i = 0; i < elts.length; i++) {
+                    elts[i].parentElement.classList.add(className);
+                    
+                }
+            }
+
+            figureAddClass("float");
+            figureAddClass("float-right");
+            figureAddClass("medium");
+
+        })();
+    </script>
+    
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/p5.js-widget/p5-widget.js"></script>
+
+    {% block extra_scripts %}
+    {% endblock %}
+</body>
+</html>

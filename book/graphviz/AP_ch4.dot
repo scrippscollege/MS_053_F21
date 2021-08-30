@@ -1,0 +1,57 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="4. Data capture",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+DE [label="Exercise in class: \nDecode"]
+SC [label="Source code"]
+DOM [label="DOM elements:\n creating and styling a button"]
+MC [label="Mouse capture"]
+KC [label="Keyboard capture"]
+AC [label="Audio capture"]
+FT [label="Video/Face capture"]
+EiC [label="Exercise in class"]
+CC [label="The concept of capture"]
+WA [label="Web analytics and heatmap"]
+FE [label="Form elements"]
+ML [label="Metrics of likes"]
+VD [label="Voice and audio data"]
+HT [label="Health tracker"]
+MW [label="While()"]
+MX [label="MiniX: \nCapture ALL"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; MX, SC}
+{rank = same; MW, EiC}
+
+//graph
+GS -> SU -> ST -> DE -> SC;
+SC -> DE;
+GS -> RR[dir=both];
+SU -> MW [dir=both];
+GS -> MX;
+RR -> MX, SU;
+SC -> DOM [minlen=2];
+SC -> MC, KC [minlen=3];
+SC -> AC, FT [minlen=4];
+DOM -> EiC;
+MC, KC, AC, FT -> EiC ;
+EiC-> CC ;
+CC -> WA, FE [minlen=2];
+CC -> ML, VD, HT[minlen=3];
+ST, CC -> MW -> Notes;
+MW -> MX;
+RR -> FR;
+}

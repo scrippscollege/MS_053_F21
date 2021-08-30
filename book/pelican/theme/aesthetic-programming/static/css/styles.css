@@ -1,0 +1,479 @@
+/*.pagedjs_area {*/
+    /*outline: 1px solid cyan;*/
+    /*background-attachment: local;*/
+    /*background-size: 100% 12px;*/
+    /*background-position: -1px -1px;*/
+    /*background-image: linear-gradient(to bottom, cyan 1px, transparent 1px);*/
+/*}*/
+
+
+.lo-res {
+    outline: 10px solid red;
+}
+
+.too-big {
+    outline: 10px solid orange;
+}
+
+:root {
+--font-size: 13px;
+--line-height: 16px;
+}
+
+.web-only {
+    display: none;   
+}
+
+@page {
+    size: 203mm 276mm;
+}
+
+@page:left {
+    margin: 3.5cm 3cm 3.5cm 2cm;
+    @top-right {
+      content: "Aesthetic Programming";
+      font-family: "HerscheyTimes";
+      font-size: 7pt;
+    }
+    @bottom-right {
+      content: counter(page);
+      margin-top: 6px;
+      font-size: 10pt;
+    }
+}
+
+@page:right {
+    margin: 3.5cm 2cm 3.5cm 3cm;
+    @top-left {
+      content: string(title);
+      font-size: 10pt;
+      font-size: 9pt;
+    }
+    @bottom-left {
+      content: counter(page);
+      font-size: 10pt;
+    }
+}
+
+@page:first {
+    @top-left {
+      content: "";
+    }
+    @bottom-left {
+      content: "";
+    }
+}
+@page:blank {
+    @top-left {
+      content: "";
+    }
+    @bottom-left {
+      content: "";
+    }
+    @top-right {
+      content: "";
+    }
+    @bottom-right {
+      content: "";
+    }
+}
+
+
+@page toc {
+    @top-right {
+      content: "";
+    }
+    @bottom-right {
+      content: "";
+    }
+}
+
+@page firstpage {
+    @top-left {
+      content: "";
+    }
+    @bottom-left {
+      content: "";
+    }
+    @top-right {
+      content: "";
+    }
+    @bottom-right {
+      content: "";
+    }
+}
+
+
+
+
+.pagedjs_page {
+    /*outline: 1px solid black;*/
+}
+
+.pagedjs_page {
+counter-increment: page;
+}
+
+h1 {
+    break-before: right;
+    /*page: firstpage;*/
+   string-set: title content(text); 
+}
+
+h1 + p img {
+    break-after: left;
+    max-height: 18cm;
+}
+
+h1[data-id="chapter=front-colophon"] {
+    color: white;
+    break-before: left !important;
+    page: firstpage;
+}
+h1[data-id="chapter=colophon"]:before,
+h1[data-id="chapter=front-colophon"]:before {
+    content: "";
+    width: 17cm;
+    height: 1cm;
+    display: block;
+    position: absolute;
+    top: -2.25cm;
+    right: -0.5cm;
+    background-color: white;
+}
+h1[data-id="chapter=colophon"]:after,
+h1[data-id="chapter=front-colophon"]:after {
+    content: "";
+    width: 17cm;
+    height: 1cm;
+    display: block;
+    position: absolute;
+    top: 22cm;
+    right: -0.5cm;
+    background-color: white;
+}
+
+
+
+.toc:not(#mainToc):before {
+    content: "Contents";
+    display: block;
+}
+.toc {
+    /*break-before: left;*/
+    break-after: right;
+    margin-top: 15px;
+    page: toc;
+}
+
+.toc-afterword {
+    break-inside: avoid;
+}
+.toc-afterword .toc {
+    break-after: avoid !important;
+}
+
+.toc li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.toc a {
+    border: 0;
+}
+
+
+.toc a::after {
+  content: target-counter(attr(href), page);
+  display: block;
+  width: 3em;
+  text-align: right;
+  float: right;
+}
+
+#mainToc {
+    page: toc;
+}
+
+#mainToc > ul {
+    border: 0;
+    padding: 0;
+    width: 35em;
+}
+.toc > ul {
+    width: 35em;
+}
+.toc ul:first-of-type > li {
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 15px;
+}
+#mainToc ul:first-of-type > li {
+    padding-bottom: 20px;
+}
+#mainToc ul li:before {
+    content: "" !important;
+}
+
+#mainToc ul li ul li:before {
+    content: "– " !important;
+}
+
+.toc ul:first-of-type > li ul li {
+    font-weight: normal;
+    margin-top: 0;
+    font-size: 13px;
+    padding-bottom: 0;
+}
+
+#mainToc ul:first-of-type > li a {
+    display: block;
+}
+
+.toc ul:first-of-type > li ul li a {
+    display: initial;
+}
+
+
+div[data-id=mainToc]  {
+    margin-top: calc(-8 * 16px);
+}
+        
+div[data-id=mainToc] ul:before {
+  content: "";
+  width: 17cm;
+  height: 3cm;
+  display: block;
+  position: absolute;
+  top: -3.25cm;
+  right: -0.5cm;
+  background-color: white;
+  
+}
+
+div[data-id=mainToc] ul:after {
+  content: "";
+  width: 17cm;
+  height: 1cm;
+  display: block;
+  position: absolute;
+  top: 22cm;
+  right: -0.5cm;
+  background-color: white;
+}
+
+a[href="#chapter=afterword-recurrent-imaginaries"]{
+    break-before: page;
+    display: block;
+}
+
+
+h1:before,
+h2#setup:before {
+    content: "";
+    width: 14cm;
+    height: 1cm;
+    display: block;
+    position: absolute;
+    top: -2.25cm;
+    left: -0.5cm;
+    background-color: white;
+}
+h1:after {
+    content: "";
+    width: 14cm;
+    height: 1cm;
+    display: block;
+    position: absolute;
+    top: 22cm;
+    left: -0.5cm;
+    background-color: white;
+}
+
+figure,
+h2 {
+    -webkit-break-inside: avoid;
+            break-inside: avoid;
+       page-break-inside: avoid;
+       /* column break ? */
+}
+
+/* astuce pour garder des lignes après des titres */
+h2::after {
+    content: "";
+    display: block;
+    height: 48pt;
+    margin-bottom: -48pt;
+}
+
+/*
+p:first-of-type {
+    padding-top: 0 !important;
+}
+*/
+
+h2 + p{
+    padding-top: var(--line-height) !important;
+}
+
+hr {
+    break-after: page;
+}
+
+h2[id^="notes"]{
+    break-before: page;
+    margin-top: calc(-1 * var(--line-height)) !important;
+}
+
+div.footnote hr,
+h2#notes + hr {
+    break-after: avoid !important;
+}
+
+div.footnote ol {
+    margin: 0;
+    margin-top: var(--line-height);
+    padding: 0;
+    column-count: 3;
+}
+
+img {
+    max-height: 19cm;
+}
+
+.CodeMirror {
+    height: initial;
+    font-size: 80%;
+    line-height: 140%;
+}
+
+pre .CodeMirror-line {
+    outline: initial;
+    outline-offset: initial;
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+    font-family: ocr-pbi;
+}
+
+
+#book-index {
+    break-before: page;
+    columns: 3;
+    font-size: 9pt;
+    line-height: 11pt;
+    column-fill: auto;
+}
+
+#book-index ul {
+  border-left: 0px;
+  padding-left: 0;
+}
+
+#book-index ul li {
+  margin: 0;
+  list-style-type: none;
+  text-indent: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#book-index ul li:before {
+  display: none;
+}
+
+.list-alphabet-element:not(:first-child) {
+  margin-top: 11pt;
+}
+
+.link-page a {
+  text-decoration: none;
+}
+
+.link-page a::after{ content: target-counter(attr(href), page); }
+
+.link-page::after{ content: ", "; }
+
+.link-page:last-of-type::after{ content: none; }
+
+/*.index-value::after{ content: " – "; }*/
+pre {
+    margin-left: -1.75em;
+    letter-spacing: -0.5px;
+}
+pre code {
+}
+
+@media screen {
+    .pagedjs_pages {
+        width: calc(var(--pagedjs-width) * 2.1);
+    }
+}
+
+
+a.footnote-backref {
+    display: none;
+}
+
+a[href^=http] {
+    word-break: break-word;
+ }
+
+
+h2[data-id^="further-reading"] + ul,
+.long-list ul {
+    column-count: 2;
+    font-size: 9px;
+    line-height: 12px;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.1px;
+    word-spacing: -0.5px;
+}
+h2[data-id^="further-reading"] + ul {
+    margin-top: calc(1 * var(--line-height));
+}
+h2[data-id^="further-reading"] + ul li,
+.long-list ul li {
+    margin-bottom: 6px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2[data-id^="required-reading"] + ul li {
+    margin-bottom: calc(0.5 * var(--line-height));
+}
+
+div,
+p {
+    widows: 3;
+    orphans: 3;
+}
+
+.flowchart-spread {
+    height: 19cm;
+    max-height: initial;
+    max-width: initial;
+    position: absolute;
+    top: 2cm;
+}
+
+.code--line {
+    margin-left: 2em !important;
+    height: var(--line-height) !important;
+}
+
+
+/* SYNTAX HIGHLIGHTING FOR PRINT */
+:root {
+    --light-gray: #000 !important;
+    --dark-gray: #000 !important;
+    --almost-black: #000 !important;
+    --dark-brown: black !important;
+    --light-brown: #000 !important;
+    --pinkish: #000 !important;
+    --dark-blueish: #000 !important;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ SITENAME }}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/reset.css" type="text/css" media="all" charset="utf-8">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/interface-0.1.css" type="text/css" media="all" charset="utf-8">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codehilite.css" type="text/css" media="all" charset="utf-8">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/shared.css" type="text/css" media="all" charset="utf-8">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/styles.css" type="text/css" media="all" charset="utf-8">
+  
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/codemirror.css" type="text/css" media="all" charset="utf-8">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/p5-widget-codemirror-theme.css" type="text/css" media="all" charset="utf-8">
+  <style>
+    /* .code--line--number { */
+      .code--line:before {
+        position: absolute;
+        right: calc(100% + .5em);
+        font-size: 80%;
+        border-right: 1px dotted lightgray;
+        padding-right: .75em;
+        content: attr(data-line-number);
+      }
+
+      .code--line {
+        display: block;
+        position: relative;
+        margin-left: 3em;
+        height: 1.75em;
+      }
+
+      pre .CodeMirror-line {
+          outline: initial;
+          outline-offset: initial;
+      }
+
+      .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+          font-family: ocr-pbi;
+      }
+    </style>
+
+    <script>
+      window.PagedConfig = {
+        before: function () {
+          activateCodeblocks();
+
+          //createIndex({
+          //    spanClassIndex: 'indexed_word',
+          //    indexElement: '#book-index', 
+          //    alphabet: true       
+          //  });
+        }
+      };
+    </script>
+
+
+  </head>
+  <body>
+    <h1 id="{{ page.title }}">{{ page.title }}</h1>
+    {{ page.content }}
+
+    <!--<section id="book-index"></section>-->
+
+    <script type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/codemirror.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/javascript.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/codemirror/addon/runmode.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/activateCodeblocks.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/createIndex.js"></script>-->
+    <script async type="text/javascript" charset="utf-8" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/paged.polyfill.js"></script>
+
+    <script>
+        // window.setTimeout(function(){
+            // console.log("Check image resolution");
+            // // Redlights images too small for printing
+            // var images = document.getElementsByTagName("img");
+
+            // for (var i=0; i < images.length; i++) {
+            //     if (Math.ceil(images[i].naturalHeight / images[i].height) < 1.8) {
+            //         console.log(images[i] + ": " + Math.floor(images[i].naturalHeight / images[i].height) );
+            //         images[i].className += "lo-res";
+            //     }
+            //     if (Math.ceil(images[i].naturalHeight / images[i].height) < 4.5) {
+            //         console.log(images[i] + ": " + Math.floor(images[i].naturalHeight / images[i].height) );
+            //         images[i].className += "too-big";
+            //     }
+            // }
+            // console.log("done checking resolution");
+        // }, 5000);
+    </script>
+
+</body>
+</html>
+

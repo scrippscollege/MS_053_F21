@@ -104,7 +104,7 @@ This exercise is about getting the "key ID" and "Engine ID" from Google so that 
 
   ![ch8_3b](ch8_3b.png){: style="height: 8.6cm;" }
   :   *Figure 8.5: Google Custom Search interface - configuring search settings*
-</div>
+    </div>
 
 
 ## APIs
@@ -265,8 +265,9 @@ Paying close attention to errors/bugs is a vital part of learning to program as 
 Broadly speaking, there are three types of errors:
 
 1. **Syntax errors** are problems with the syntax, also known as parsing errors. These errors — such as spelling errors or missing a closed bracket — tend to be easier to catch, and can be detected by a parser (in this case the browser).
+  
   > SyntaxError: missing `)` after argument list
-
+  
 2. **Runtime errors** happen during the execution of a program while the syntax is correct.
   The web browser console is the place to understand these errors. Below shows two examples of runtime errors:  
   If we remove the conditional checking `if (getImg){}` within the `draw()` function, the program cannot initially load the image as it takes some time to process the web API request. The error will keep on showing in the web console until the program successfully parses the image URL.
@@ -297,8 +298,7 @@ The organization of information is structured through the process of generalizat
 
 To que(e)ry data in this way throws into further question how data is collected, stored, analyzed, recommended, ranked, selected, and curated in order to understand the broader social and political implications, not least how categorizations such as gender and race are normalized and hegemonized. To query the power structures of materials from a feminist standpoint is to understand "the mechanisms that shape reality"[^feminist] and how they might be reprogrammed.
 
-<div class="section exercise" markdown=1>
-## MiniX: Working with APIs (in a group)
+## MiniX: Working with APIs (in a group)
 
 **Objectives:**
 
@@ -333,13 +333,14 @@ This is a relatively complex exercise that requires you to:
 * What is the program about? Which API have you used and why?
 * Can you describe and reflect on your process in this miniX in terms of acquiring, processing, using, and representing data? How much do you understand this data or what do you want to know more about? How do platform providers sort the data and give you the requested data? What are the power relations in the chosen APIs? What is the significance of APIs in digital culture?
 * Try to formulate a question in relation to web APIs or querying/parsing processes that you would like to investigate further if you had more time.  
-</div>
 
 ## Required reading
 
-* David Gauthier, Audrey Samson, Eric Snodgrass, Winnie Soon, and Magda Tyżlik-Carver, "Executing," in Nanna Thylstrup, Daniela Agostinho, Annie Ring, Catherine D’Ignazio and Kristin Veel, eds., *Uncertain Archives* (Cambridge, MA: MIT Press, 2021).
-* Daniel Shiffman, "Working with data - p5.js Tutorial," *The Coding Train* (10.1, 10.4 - 10.10), <https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r>.
-* Eric Snodgrass and Winnie Soon, "API practices and paradigms: Exploring the protocological parameters of APIs as key facilitators of sociotechnical forms of exchange]," *First Monday* 24, no.2 (2019), <https://doi.org/10.5210/fm.v24i2.9553>.
+David Gauthier, Audrey Samson, Eric Snodgrass, Winnie Soon, and Magda Tyżlik-Carver, "Executing," in Nanna Thylstrup, Daniela Agostinho, Annie Ring, Catherine D’Ignazio and Kristin Veel, eds., *Uncertain Archives* (Cambridge, MA: MIT Press, 2021).
+
+Daniel Shiffman, "[Working with data - p5.js Tutorial](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r)," *The Coding Train* (10.1, 10.4 - 10.10).
+
+Eric Snodgrass and Winnie Soon, "[API practices and paradigms: Exploring the protocological parameters of APIs as key facilitators of sociotechnical forms of exchange](https://journals.uic.edu/ojs/index.php/fm/article/view/9553/7721)," *First Monday* 24, no.2 (2019).
 
 ## Further reading
 

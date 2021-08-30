@@ -1,0 +1,51 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="1. Getting started",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+WE [label="Working environment"]
+p5 [label="p5.js"]
+CE [label="Code editor"]
+MFP [label="My first program"]
+EiC [label="Exercise in class"]
+RC [label="Reading the web console \n'Hello World'"]
+RG [label="Reading the \nreference guide"]
+Git [label="Git"]
+MW [label="While()"]
+MX [label="MiniX: \nRUNME and README"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+{rank = same; MFP, WE}
+
+//graph
+GS -> SU -> ST;
+ST -> WE;
+GS -> RR[dir=both];
+WE -> p5;
+WE -> CE;
+WE -> Git;
+ST -> MFP;
+MFP -> EiC;
+MFP -> RC;
+MFP -> RG;
+SU -> MW [dir=both];
+MW -> MX, Notes;
+RR -> MX, SU;
+Git -> MW;
+RG -> MX;
+p5 -> CE [dir=both];
+WE -> MFP;
+p5 -> RG;
+RR -> FR;
+}

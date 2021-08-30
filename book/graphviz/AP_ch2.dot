@@ -1,0 +1,54 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label=" 2. Variable geometry",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+SC [label="Source code"]
+CO [label="Coordinate"]
+EiC [label="Exercise in class"]
+VB [label="Variables"]
+YVB [label="Why use variables?"]
+OF [label="Other functions"]
+BAO [label="Basic arithmetic operators"]
+CS [label="Conditional structures"]
+RO [label="Relational operators"]
+DiC [label="Discussion in class"]
+MW [label="While()"]
+MX [label="MiniX: \nGeometric emoji"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; MW, EiC}
+{rank = same; SC, MX}
+{rank = same; OF, DiC}
+
+//graph
+GS -> MX;
+GS -> RR[dir=both, minlen=2];
+SU -> MW [dir=both];
+MW -> VB[dir=both];
+RO -> BAO[dir=none];
+GS -> SU -> ST -> SC;
+SC -> CO -> EiC;
+SC -> VB;
+VB -> YVB[minlen=2];
+SC -> OF -> BAO;
+SC -> CS[minlen=2];
+CS -> RO ;
+EiC, VB, CS -> DiC;
+ST -> MW -> Notes;
+MW -> MX;
+RR -> MX, SU;
+RR -> FR;
+}

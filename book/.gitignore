@@ -1,0 +1,7 @@
+output/
+pelican/output
+*.pyc
+pelican/__pycache__
+screencasts/
+venv
+pelican/venv

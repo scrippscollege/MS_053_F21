@@ -249,7 +249,7 @@ Make a RunMe and a ReadMe.
 * How would you describe your first independent coding experience (in relation to thinking, reading, copying, modifying, writing code, and so on)?
 * How is the coding process different from, or similar to, reading and writing text?
 * What does code and programming mean to you, and how does the assigned reading help you to further reflect on these terms?
-</div>
+
 
 ## Required reading
 

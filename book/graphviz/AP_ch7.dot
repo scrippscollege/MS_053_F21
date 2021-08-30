@@ -1,0 +1,48 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="7. Vocable code",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+DE [label="Exercise in class \n(Decode)"]
+TX [label="Textuality"]
+CO [label="Conditional structure"]
+JS [label="JSON"]
+SC [label="Source Code"]
+EiC [label="Exercise in class"]
+MW [label="While()"]
+MX [label="MiniX: \nE-lit"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; RR, SC}
+{rank = same; FR, TX}
+
+//graph
+GS -> SU -> ST -> DE;
+GS -> MX;
+GS -> RR[dir=both, minlen=2];
+SU -> MW [dir=both];
+RR -> MX, SU;
+DE -> TX;
+TX -> SC[dir=both];
+SC -> EiC;
+SC -> CO, JS[dir=both];
+ST -> MW [dir=both];
+JS -> MX;
+MW -> MX, Notes;
+DE -> SC[dir=both];
+CO -> MW[dir=both];
+ST -> EiC;
+RR -> FR;
+}

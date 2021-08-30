@@ -1,0 +1,23 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="Preface",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+book [label="What kind of book is this?"]
+AP [label="Why aesthetic programming?"]
+SS [label="And software studies?"]
+OP [label="Open publishing"]
+TOC [label="Flow of contents"]
+BO [label="The book object"]
+Notes [label="Notes"]
+
+//graph
+GS -> book -> AP -> SS -> OP -> TOC -> BO -> Notes;
+}

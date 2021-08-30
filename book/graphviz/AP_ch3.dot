@@ -1,0 +1,56 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="3. Infinite loops",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+DE [label="Exercise in class\n(Decode)"]
+SC [label="Source code"]
+FN [label="Function"]
+EiC [label="Exercise in class"]
+TR [label="Transform"]
+PP [label="push() and pop()"]
+EiC2 [label="Exercise in class"]
+AP [label="Reading \nAsterisk Painting"]
+SC2 [label="Source code"]
+EiC3 [label="Exercise in class"]
+AR [label="Arrays"]
+CS [label="Conditional statements"]
+LO [label="Loops"]
+MW [label="While()"]
+MX [label="MiniX: \nDesigning a throbber"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; SU, ST}
+{rank = same; RR, GS}
+{rank = same; MW, Notes}
+{rank = same; FR, SC}
+
+//graph
+GS -> SU -> ST -> SC -> DE;
+GS -> RR[dir=both, minlen=3];
+SU -> MW [dir=both];
+GS -> MX;
+RR -> MX, SU;
+SC -> FN -> EiC;
+TR-> PP;
+SC -> TR -> EiC2;
+EiC, EiC2 -> AP -> SC2 -> EiC3
+SC2 -> AR;
+SC2 -> CS;
+SC2 -> LO;
+ST, LO -> MW -> Notes;
+MW -> MX;
+RR -> FR;
+}

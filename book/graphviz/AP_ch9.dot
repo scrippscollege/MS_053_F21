@@ -1,0 +1,44 @@
+digraph G {
+
+node[fontname="Hershey-Noailles-help-me"]
+
+//labels
+GS [
+label="9. Algorithmic procedures",
+style=bold,
+shape=rectangle,
+penwidth="1pt"
+]
+
+SU [label="setup()"]
+ST [label="start()"]
+DiC [label="Discussion in class"]
+EiC [label="Exercise in class"]
+FC [label="Flowcharts"]
+EiC1 [label="Exercise 1"]
+EiC2 [label="Exercise 2"]
+AM [label="Flowcharts\nas an artistic medium"]
+MW [label="While()"]
+MX [label="MiniX: \nFlowcharts"]
+RR [label="Required reading"]
+FR [label="Further reading"]
+Notes [label="Notes"]
+
+//rank
+{rank = same; RR, SU}
+{rank = same; MW, Notes}
+
+//graph
+GS -> SU -> ST;
+GS -> MX[minlen=3];
+ST -> DiC -> FC;
+ST -> FC;
+FC -> EiC -> EiC1 -> EiC2;
+EiC -> AM -> MW;
+MW -> Notes;
+MW -> FC[dir=both]
+SU -> MW [dir=both];
+RR -> GS, SU, MW;
+FC -> MX;
+RR -> FR;
+}
