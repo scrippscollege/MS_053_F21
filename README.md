@@ -10,7 +10,7 @@
 
 
 
-<img src="imgs/README/image-0250690.png?" style="zoom:50%;" />
+<img src="https://aesthetic-programming.net/theme/images/coverGraph.svg" style="zoom:50%;" />
 
 ## COURSE INFORMATION
 
@@ -22,6 +22,14 @@ This is an introductory course in computation within context of media and art wi
 - Analyze the social and cultural importance of computational media art
 - Use technical proficiency to create computational media art
 - Create a two-dimensional computational-based project
+
+
+
+### Special project
+
+What would it mean to de-colonize code and a programming language?
+
+
 
 ## Outline
 
@@ -59,7 +67,7 @@ This is an introductory course in computation within context of media and art wi
 | 15    | 12/06       | Show                        |              |                                                              |                                                              |
 | 16    | 12/08       | Show                        |              |                                                              |                                                              |
 
- 
+
 
 | **W** | **Date**    | **theme**                   | **Soon+Cox** | **Exercises** (in class)                                     | **Assignment** (due on M)                                    | **Critique** |
 | :---- | ----------- | --------------------------- | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ |

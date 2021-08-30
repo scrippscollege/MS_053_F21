@@ -10,7 +10,8 @@ use constant EQUALITY_FOR_ALL
   "the money to be in the right place at the right time";
 use constant NEVER = 'for;;';
 use constant SATISFIED => NEVER;
-# It 's time to liposuck the fat from the thighs of the bloated # bloke society—smear it on ourselves and become invisible.
+# It 's time to liposuck the fat from the thighs of the bloated
+# bloke society—smear it on ourselves and become invisible.
 # We are left with no option but to construct code that
 # concretizes its opposition to this meagre lifestyle.
 
