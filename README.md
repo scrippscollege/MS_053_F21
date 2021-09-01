@@ -6,7 +6,7 @@
 
 ### Scripps Campus, Outdoor classroom, 05
 
-## [Syllabus](https://github.com/scrippscollege/MS_053_F21) | [Discord](https://discord.gg/jaj7xcBN)
+## [Syllabus](https://github.com/scrippscollege/MS_053_F21) | [Discord](https://discord.gg/Us9UxmRD)
 
 
 
