@@ -1,6 +1,6 @@
 # writing, coding and thinking
 
-![p5.js](https://www.evernote.com/l/ADM7be1rCP5IN6OZRiqI9HDuGve1LFuz6QQB/image.png)
+![fit,right,p5.js](https://www.evernote.com/l/ADM7be1rCP5IN6OZRiqI9HDuGve1LFuz6QQB/image.png)
 
 
 
@@ -62,7 +62,7 @@ colonial thinking
 
 make abstract robots do things
 
-![what is p5.js?](imgs/writing, coding and thinking/image-20210901074115652-0507283.png)
+![right,fit,what is p5.js?](imgs/writing, coding and thinking/image-20210901074115652-0507283.png)
 
 ---
 
@@ -76,9 +76,9 @@ artistic activity that **promotes reflection about computation** **within its ow
 
 ---
 
-sketching with code
+sketching with code: manfred mohr in 1971
 
-<img src="imgs/writing, coding and thinking/B1qCELUjxzjiZ6KZ-k0vXvPYjd5kpsVWd5QJtcqO8uklc6wzSqdYoNRPmbUYYnldBSjkf74YhwJVfS1JS8Ak3xFN6Ki0H-MvAeligC4OccG3-w.jpeg" style="zoom:50%;" />
+![right,fit](imgs/writing, coding and thinking/B1qCELUjxzjiZ6KZ-k0vXvPYjd5kpsVWd5QJtcqO8uklc6wzSqdYoNRPmbUYYnldBSjkf74YhwJVfS1JS8Ak3xFN6Ki0H-MvAeligC4OccG3-w.jpeg)
 
 
 

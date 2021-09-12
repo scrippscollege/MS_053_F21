@@ -156,3 +156,4 @@ Our community represents a wide variety of backgrounds and perspectives. We are 
 |       | 12/01       | Project work                                         |                             |                                                              |                                                              |
 | 15    | 12/06       | Show                                                 |                             |                                                              |                                                              |
 | 16    | 12/08       | Show                                                 |                             |                                                              |                                                              |
+

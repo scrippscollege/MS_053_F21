@@ -18,6 +18,6 @@ Ask for a volunteer. Ask them to stand at the board with a marker. Have each stu
 
 - graph paper
 
-Develop your own procedural drawing rule set in the spirit of Sol LeWitt (or the prompts from conditionaldesign.org). Have your peers produce a drawing with your system.
+Develop your own procedural drawing rule set in the spirit of Sol LeWitt. Have your peers produce a drawing with your system.
 
 ### Discuss how you will encode this in p5.js

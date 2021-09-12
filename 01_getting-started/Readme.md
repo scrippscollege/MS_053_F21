@@ -5,7 +5,14 @@ page_order: 1
 
 [TOC]
 
+> I will add my content in quotation blocks like this one.  [@douglasgoodwin](https://github.com/douglasgoodwin/)
+
+>  programmers are artists when you cast programming as a cultural production. 
+
+> "The idea itself, even if it is not made visual, is as much of a work of art as any finished product." Sol LeWitt
+
 ## setup()
+
 It has become commonplace to include programming in educational programes at all levels and across a range of disciplines. Yet this still remains relatively uncommon in the arts and humanities, where learning to program does not align explicitly with the related career aspirations. This raises questions about what does or doesn't get included in curricula, why this may be the case, and which knowledge and skills are considered essential for some subjects and not others. Certain forms of privilege (related to class, gender, race) are clearly affirmed in these choices. For instance, in very general terms, "high culture" has traditionally been described as the domain of university-educated (wealthy, white) people, whilst "low culture" the domain of non-university-educated (working class) ordinary people. Neither high nor low culture, programming cuts across this class divide as both an exclusive and specialized practice[^1967] that is also one rooted in the acquisition of skills with applied real-world use in both work and play. Yet, despite its broad applicability, access to the means of production at the level of programming remains an issue all the same.  
 
 We might usefully characterize this in terms of literacy — traditionally applied to the skills of reading and writing — and to further include the reading and writing of code. Indeed coding is often referred to as "the literacy of today," and as the twenty-first century skill "we must then learn to master [sic]."[^STEM] Arguably, knowing some basic coding skills will not only enhance future employability, but will also enable the improved understanding of how things (codes) are "encoded" and "decoded."[^Hall] Further echoing cultural studies, and its foundations in an expanded notion of literacy to include aspects of ordinary culture, Annette Vee's book *Coding Literacy* from 2017 is an attempt to shift our focus from technical skill to wider social relations. As she puts it, "Seeing programming in light of the historical, social, and conceptual contexts of literacy helps us to understand computer programming as an important phenomenon of communication, not simply as another new skill or technology."[^Vee]
@@ -22,14 +29,17 @@ This opening chapter introduces some ideas and exercises to get started (the `se
 ![ch1_1](ch1_1.png){: .float}
 :   *Figure 1.1: p5.js web interface*
 
-Throughout the book, we will use JavaScript as the main programming language, primarily focusing on p5.js and its associated libraries. Practically speaking, p5.js is a web-based library,[^library] that utilizes an open source JavaScript framework that makes creating projects with code on the web accessible, as well as much easier to share via the Internet, such as p5.js Web Editor, Open Processing, and Git hosting platforms, without additional installation. A JavaScript-based project can be run and executed using a URL in a browser.
+Throughout the book, we will **use JavaScript as the main programming language**, primarily focusing on **p5.js** and its associated libraries. Practically speaking, p5.js is a web-based library,[^library] that utilizes an open source JavaScript framework that makes creating projects with code on the web accessible, as well as much easier to share via the Internet, such as p5.js Web Editor, Open Processing, and Git hosting platforms, without additional installation. A JavaScript-based project can be run and executed using a URL in a browser.
 
 JavaScript was originally developed in 1995 by Brendan Eich with the aim to run a program in the Netscape browser.[^Severance] Some people might be confused with the difference between JavaScript and Java, but basically they are two different systems. JavaScript is a lightweight programming language which is commonly used for animated visual and interactive web applications, and was originally designed to enhanced interface experiences, and to complement Java. Indeed, program code from any "high-level programming language" (i.e. one closer to human languages but further from machine language) requires a translation into native machine instructions/code for a computer to run and execute it. This translation process is usually done through interpreters or compilers. JavasScript is an interpreted language by design that in modern browsers, generally operates using both an interpreter and just-in-time compilers to translate source code at runtime.[^Clark] This makes it faster to kickstart the code running process, but takes longer when the application is more complex and with longer interactions, as extra runtime overhead will be incurred.[^Moon] On the other hand, Java, a compiled and complex programming language, was first released to the public in 1996 by Sun Microsystems, meaning that source code is typically written in an Integrated Development Environment (IDE).[^IDE] It is required to optimize and compile into static bytecode for computer processing by a Java Virtual Machine (JVM).[^JVM] Java powers many desktop and mobile applications, from small apps on Android mobile devices to games like Minecraft,[^Minecraft] while JavaScript mainly works for smaller web-based applications such as websites and bots. For an introduction to programming like this, we needed something that is relatively uncomplicated in terms of getting started, but has the capacity for proficiency development. This is often referred to as "low floors and high ceilings,"[^Papert] and JavaScript is a good tool from this perspective.
 
 But there is much more to this than just introducing the tool from a pragmatic perspective. This book will use p5.js, a JavaScript library which was created by artist Lauren McCarthy in 2014 for the purpose of what we call "aesthetic programming." To be more precise about its genealogy, Casey Reas and Ben Fry developed the remarkable, influential open source project Processing in 2001,[^Processing] a Java-based desktop environment with the aim to reach out to visual artists and designers. However, McCarthy observed that the various creative open source software available was mostly developed by white men, and there was a lack of diversity in such environments, and unfortunately programming remains a very male-dominated practice.[^laczko] McCarthy started to explore what Processing would look like on the web. Importantly, the core idea for p5.js is not just to deploy Processing as a web-based platform, but to address diversity and inclusivity explicitly, and take these issues seriously in software development and communication. As McCarthy says, "thinking about community outreach and diversity is not a secondary goal of p5.js, it's the foundation on which the platform is built."[^McCarthy] Within just a couple of years, the p5.js contributors had developed a community statement, translated the interface into a variety of popular languages such as Spanish and Simplified Chinese,[^Chinese] started the homepage series as part of p5.js which showcased work by and interviews by Asian women and gender non-conforming coders,[^Jin] added a high constrast mode and audio feedback for people who have difficulty seeing,[^UX] and developed a series of workshops on creative expression called "Signing Coders" for people who have difficulty hearing,[^Choi] amongst other things. As p5.js demonstrates, software is not just a tool, but also about people and politics.[^chun]
 
 ## Working environment
-You will need an editor to write and document your code. We will use [Atom](https://atom.io/),[^Atom] a free and open source text and source code editor that works across different platforms to write code. We choose a downloadable code editor as opposed to a web editor because we view code as more than just a piece of software, it is also about the relations with the configuration of your own computer and operating system, the way various browsers behave as well as data files, and the organization of folder paths, and so on.  
+
+> You may wonder why you need a local working environment when you can use [editor.p5js.org](editor.p5js.org/) to edit and run your code.  But it is important when you want to build your own library of code or collaborate with others. See SOon & Cox' argument below. Discuss!
+
+You will need an editor to write and document your code. We will use [Atom](https://atom.io/),[^Atom] a free and open source text and source code editor that works across different platforms to write code. We choose a downloadable code editor as opposed to a web editor because we view *code as more than just a piece of software, it is also about the relations with the configuration of your own computer and operating system, the way various browsers behave as well as data files, and the organization of folder paths, and so on*.  
 
 Additionally we use [Gitlab](https://about.gitlab.com/) as our code and text respository, at least for this book. We also use Gitlab for teaching purposes, a place where students can upload their ReadMe and RunMe files every week, for peer feedback and to facilitate peer learning, and to read and share code and related thinking. We have found this to be an effective way to work both individually and collectively, and share materials in keeping with the best principles of free and open source software development, and students use Readme to explain the technical aspects as well as to develop critical discussion.   
 
@@ -127,25 +137,143 @@ To run the code, you need to go to "Packages > atom-live-server > Start Server" 
 :   *Figure 1.6: My first program*  
 
 <div class="section exercise" markdown=1>
+## Class Exercise(s)
 
-## Exercise in class
+> I swapped out Soon & Cox' exercise with a procedural drawing exercise: reproduce Sol LeWitt's *Wall Drawing #118*
+>
+> Consider these instructions:
+>
+> "On a wall surface, any continuous stretch of wall, using a hard pencil, place fifty points at random. The points should be evenly distributed over the area of the wall. All of the points should be connected by straight lines."
+>
+> This procedure can be roughly divided into drawing the points and connecting the points. Ask for a single volunteer to draw 50 points on a white board with a marker. The remaining students can come up to the board and connect each dot to another. This example came from class on September 8, 2021:
 
-This exercise is to familiarize you with the working environment, path and local directory so you learn that running a sketch in a web browser requires loading the exact path to the JavaScript libraries. You are also free to create your own folder name and rename the file sketch.js as you please. You can also try to change parameters by changing numbers to get a sense of how things work, but this will be explained in more detail later on in the book.
+![from 09/08/21 class ](imgs/README/image-1469278.png)
 
-![](ch1_7.png)
-:   *Figure 1.7: My first program 1.1*
+> Reproduce this procedure (and drawing) in p5.js! How will you do it? Plan first.
+>
+> 1. Start by drawing 50 points on the canvas. This can go in the `setup()` function. 
+>
+> 2. Draw a line from each point to another. Ensure that every point is connected to another. How will you do that?
+>
+>    The line drawing may also go into the `setup()` function, though you may want to move it into `draw()`. Why?
 
-1. **Stop the server.** Stop the atom-live-server by going to "Packages > atom-live-server > Stop."
-2. **Rename the folder.** Try to rename the folder "empty-example" as "myFirstSketch" (in order to help the computer to process better, don't use any spaces). In the subsequent chapters and for the exercises below, you will create your own folders.
-3. **Structure the p5 libraries.**
-    - Try to create a folder called "libraries" under "myFirstSketch."
-    - Drag the two p5 libraries into the newly created folder: "libraries."
-    - Change the relative path of the two js libraries in index.html
-4. **HTML.** Change the title in the HTML file (line 6)
-5. **RUN again.** Can you run the program again ("Atom > Packages > atom-live-server > Start Server") so that you can see almost the same screen as Figure 1.7 in a web browser?
-</div>
+> Use p5.js's `random()` function to generate 50 points[^point]. Distribute them evenly "over the area of the wall" by giving the [random()](https://p5js.org/reference/#/p5/random) function an upper boundary. The x boundary is equal to width of your canvas, and the y boundary is the height of the canvas. P5.js gives you variables for `width` and `height`, that work no matter how your canvas may change. This is super convenient!
+>
+> Here is the pseudocode:
+
+```tiljavascript
+// for i equal 0 until i less than 50 add 1:
+//  	x = random(0,width) // Why two arguments? See the documentation!
+//		y = random(0,height)
+//		draw a tiny circle at x,y
+//  	append the `[x,y]` address to a list (for later!)
+```
+
+```javascript
+for (let i = 0; i < 50; i=i+1) {
+  x = random(0,width);
+  y = random(0,height);
+  // draw a 2 pixel circle at x,y
+  circle(x,y, 2);
+  console.log(i);
+}
+```
+
+![](imgs/README/image-20210912115904958.png)
+
+> **Questions**
+>
+> 1. What's happening with those floating point numbers that you see in the Console? Do you need that kind of precision?
+> 2. We will need those points to draw lines. How can we store them for later?
+>
+> Here is an example of appending the `x,y` points into a data structure. 
+>
+> The key word here is **append**. Look in the [p5.js reference](https://p5js.org/reference/#/p5/append) for an example of appending things to an array. Pseudocode:
+
+```javascript
+// create an empty array called points
+// append each point to the array point
+```
+
+> That's easy!
+
+```javascript
+  // create an empty array called points
+  let points = [];
+  // append each point to the array point
+  x = random(0,width);
+  y = random(0,height);
+	let point = [x,y];
+  append(points, point);
+```
+
+![](imgs/README/image-20210912122223488.png)
+
+> How do we connect them all? **Discuss**
+
+> Try these options to see if each solution connects every point
+>
+> 1. Connect each point to a random point from the array. 
+> 2. Connect every point to each of the 49 other points.
+> 3. Divide the list in half and draw lines from each point in the first half to one in the second half.
+>
+> (Can you think of others that will satisfy LeWitt's instructions?)
+>
+> **Pseudocode:**
+
+```javascript
+\\ for each point in the array `pts`
+for (let i = 0; i < pts.length; i++) {
+  \\ 	draw a (straight) line to a random point
+  let aRandomPoint = random(pts);
+  line(pts[i][0],pts[i][1], aRandomPoint[0], aRandomPoint[1])
+}
+```
+
+> What is this `pts[i][0]` and `aRandomPoint[0]` business? 
+>
+> Hint: it is called an **offset.**
+
+![](imgs/README/image-20210912124407028.png)
+
+>  We have a problem: two points did not connect ^^ **Why?**
+
+> Try option 2: Connect every point to each of the 49 other points. This is what we call a **nested loop:**
+>
+> **Pseudocode:**
+
+```javascript
+// loop over every point
+	// for each point loop ver every other point
+		// draw a line
+```
+
+![](imgs/README/image-20210912125433736.png)
+
+> That's a lot of lines! Can you thin them out?
+
+> Let's try the third option: *Divide the list in half and draw lines from each point in the first half to one in the second half.*
+>
+> **Pseudocode:**
+
+```javascript
+// create the array of points
+// create two new arrays, one from the first half, the other from the second
+let firstHalf = pts.slice(0, 25)
+let secondHalf = pts.plice(25,pts.length)
+// loop over the first half connecting each point to it's companion in the second half
+for (pt in firstHalf)
+	{  }
+```
+
+![](imgs/README/image-20210912133049005.png)
+
+
 
 ### Reading the web console "Hello World"
+
+<img src="imgs/README/image-20210912111705654.png" style="zoom:50%;" />
+
 As you might realize by now, this book does not follow the conventions of most programming books by starting with the "Hello World" program that displays or prints "Hello World" onto the screen. In p5.js, `print()` is the function to print,[^print] but in a web browser setting which makes the `print()` function write in the "console area." This is an area not intended for end users, but for programmers or developers to see if there are any error messages, which are logged to the console and to check that code is executing in the expected way.
 
 In the sample code (see Figure 1.6), the line 4 prints "hello world." But to see the text, you need to open the web console area the location of which depends on the browser you are using. Try to search for it by navigating the menu bar. In Firefox, for instance, it is located under "Tools > Web Developer > Web Console" (or press the keyboard shortcut: `Ctrl + Shift + K` for Linux/Windows, and `Option + Command + K` for Mac).
@@ -367,3 +495,5 @@ Make a RunMe and a ReadMe.
 [^webeditor]: Processing Foundation announced the official release of the p5.js Web Editor in 2018, an online platform for learning and running code, and it is easy to get started with no additional installation of software. See <https://medium.com/processing-foundation/hello-p5-js-web-editor-b90b902b74cf>.
 
 [^Reference]: See <https://p5js.org/reference/>.
+[^point]: A point is an address with at least two coordinates: conventionally `x` and `y`.
+
