@@ -25,13 +25,7 @@ This is an introductory course in computation within context of media and art wi
 
 ## Required Instructional Materials
 
-### **Python for Everybody**, Charles R. Severance
-
-Book, website, creator of Sakai, Open Source hero. His book will supplies our foundation for learning Python 3. You don't need the book because *it is your class.*
-
-### [P4E.com](https://www.py4e.com/login) account
-
-The free web site for Python for Everybody. This site hosts half of the assessments for the class.
+> NOTE: I removed "Python for Everybody"
 
 ### [Free GitHub account](https://github.com), https://github.com
 
@@ -40,6 +34,9 @@ An online development platform. Our syllabus lives on GitHub. Essential.
 ### Free [Replit account](https://replit.com), https://replit.com
 
 Replit is a collaborative, in-browser IDE. Authenticate with your GitHub credentials.
+
+### Free [p5js.org](https://p5js.org/) account:
+Sign in with your GitHub account
 
 ### Special project
 
@@ -156,4 +153,3 @@ Our community represents a wide variety of backgrounds and perspectives. We are 
 |       | 12/01       | Project work                                         |                             |                                                              |                                                              |
 | 15    | 12/06       | Show                                                 |                             |                                                              |                                                              |
 | 16    | 12/08       | Show                                                 |                             |                                                              |                                                              |
-

@@ -136,16 +136,18 @@ To run the code, you need to go to "Packages > atom-live-server > Start Server" 
 ![](ch1_6.png){: style="height: 6cm"}
 :   *Figure 1.6: My first program*  
 
-<div class="section exercise" markdown=1>
-## Class Exercise(s)
 
+
+# Class Exercise(s)
+
+##### 
 
 
 > I swapped out Soon & Cox' exercise with a procedural drawing exercise: reproduce Sol LeWitt's *Wall Drawing #118*
 >
 > Consider these instructions:
 >
-> "On a wall surface, any continuous stretch of wall, using a hard pencil, place fifty points at random. The points should be evenly distributed over the area of the wall. All of the points should be connected by straight lines."
+> ##### "On a wall surface, any continuous stretch of wall, using a hard pencil, place fifty points at random. The points should be evenly distributed over the area of the wall. All of the points should be connected by straight lines."
 >
 > This procedure can be roughly divided into drawing the points and connecting the points. Ask for a single volunteer to draw 50 points on a white board with a marker. The remaining students can come up to the board and connect each dot to another. This example came from class on September 8, 2021:
 
