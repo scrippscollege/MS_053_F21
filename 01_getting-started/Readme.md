@@ -139,6 +139,8 @@ To run the code, you need to go to "Packages > atom-live-server > Start Server" 
 <div class="section exercise" markdown=1>
 ## Class Exercise(s)
 
+
+
 > I swapped out Soon & Cox' exercise with a procedural drawing exercise: reproduce Sol LeWitt's *Wall Drawing #118*
 >
 > Consider these instructions:
