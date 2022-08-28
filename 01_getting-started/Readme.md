@@ -144,10 +144,81 @@ This exercise is to familiarize you with the working environment, path and local
 ![](ch1_7.png)
 :   *Figure 1.7: My first program 1.1*
 
+> I swapped out Soon & Cox' exercise with a procedural drawing exercise: reproduce Sol LeWitt's *Wall Drawing #118*
+>
+> Consider these instructions:
+>
 > ##### "On a wall surface, any continuous stretch of wall, using a hard pencil, place fifty points at random. The points should be evenly distributed over the area of the wall. All of the points should be connected by straight lines."
+>
+> This procedure can be roughly divided into drawing the points and connecting the points. Ask for a single volunteer to draw 50 points on a white board with a marker. The remaining students can come up to the board and connect each dot to another. This example came from class on September 8, 2021:
+
+![from 09/08/21 class ](imgs/README/image-1469278.png)
+
+> Reproduce this procedure (and drawing) in p5.js! How will you do it? Plan first.
+>
+> 1. Start by drawing 50 points on the canvas. This can go in the `setup()` function. 
+>
+> 2. Draw a line from each point to another. Ensure that every point is connected to another. How will you do that?
+>
 >    The line drawing may also go into the `setup()` function, though you may want to move it into `draw()`. Why?
+
+> Use p5.js's `random()` function to generate 50 points[^point]. Distribute them evenly "over the area of the wall" by giving the [random()](https://p5js.org/reference/#/p5/random) function an upper boundary. The x boundary is equal to width of your canvas, and the y boundary is the height of the canvas. P5.js gives you variables for `width` and `height`, that work no matter how your canvas may change. This is super convenient!
+>
+> Here is the pseudocode:
+
+```tiljavascript
+// for i equal 0 until i less than 50 add 1:
+//  	x = random(0,width) // Why two arguments? See the documentation!
+//		y = random(0,height)
+//		draw a tiny circle at x,y
+//  	append the `[x,y]` address to a list (for later!)
+```
+
+```javascript
+for (let i = 0; i < 50; i=i+1) {
+  x = random(0,width);
+  y = random(0,height);
+  // draw a 2 pixel circle at x,y
+  circle(x,y, 2);
+  console.log(i);
+}
+```
+
+![](imgs/README/image-20210912115904958.png)
+
+> **Questions**
+>
+> 1. What's happening with those floating point numbers that you see in the Console? Do you need that kind of precision?
+> 2. We will need those points to draw lines. How can we store them for later?
+>
+> Here is an example of appending the `x,y` points into a data structure. 
+>
 > The key word here is **append**. Look in the [p5.js reference](https://p5js.org/reference/#/p5/append) for an example of appending things to an array. Pseudocode:
+
+```javascript
+// create an empty array called points
+// append each point to the array point
+```
+
+> That's easy!
+
+```javascript
+  // create an empty array called points
+  let points = [];
+  // append each point to the array point
+  x = random(0,width);
+  y = random(0,height);
+	let point = [x,y];
+  append(points, point);
+```
+
+![](imgs/README/image-20210912122223488.png)
+
+> How do we connect them all? **Discuss**
+
 > Try these options to see if each solution connects every point
+>
+> 1. Connect each point to a random point from the array. 
 > 2. Connect every point to each of the 49 other points.
 > 3. Divide the list in half and draw lines from each point in the first half to one in the second half.
 >
