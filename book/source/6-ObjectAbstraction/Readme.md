@@ -451,6 +451,7 @@ Once you understand objects and classes, you can continue to work on a mini game
 
 ## Further reading
 
+* Evan Narcisse, "The Natural: The Parameters of Afro," in Goldberg & Larsson, eds., *The State of Play: Creators and Critics on Video Game Culture* (New York & Oakland: Seven Stories Press, 2015). 
 * Cecile Crutzen and Erna Kotkamp, "Object Orientation," in Fuller, ed., *Software Studies*, 200-207.
 * Roger Y. Lee, "Object-Oriented Concepts," in *Software Engineering: A Hands-On Approach* (Springer, 2013), 17-24, 35-37.
 * Daniel Shiffman, "16.17 Inheritance in JavaScript - Topics of JavaScript/ES6," <https://www.youtube.com/watch?v=MfxBfRD0FVU&feature=youtu.be&fbclid=IwAR14JwOuRnCXYUIKV7DxML3ORwPIttOPPKhqTCKehbq4EcxbtdZDXJDr4b0>.

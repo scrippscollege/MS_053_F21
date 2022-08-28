@@ -314,8 +314,8 @@ To que(e)ry data in this way throws into further question how data is collected,
 * *New York Times* with code example, <https://www.youtube.com/watch?v=IMne3LY4bks&list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r&index=9>.
 * Giphy images with code example, <https://www.youtube.com/watch?v=mj8_w11MvH8&index=10&list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r>.
 * Wikipedia API, <https://www.youtube.com/watch?v=RPz75gcHj18>.
-* Twitter API and Twitter Bot with code example, <http://shiffman.net/a2z/twitter-bots/>. (Note that Twitter has tightened the rules for registering the API and you need to have a convincing proposal as well as the process can be lengthy.)
-* Search many other kinds of API, <https://www.programmableweb.com/>.
+* [Twitter API and Twitter Bot](http://shiffman.net/a2z/twitter-bots/) with code example. (Note that Twitter has tightened the rules for registering the API and you need to have a convincing proposal as well as the process can be lengthy.)
+* Search many [other kinds of API](https://www.programmableweb.com/).
 
 **Tasks (RunMe):**
 

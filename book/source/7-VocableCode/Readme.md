@@ -217,6 +217,7 @@ Snippets of the JSON file:
     "yourStatement": "not a manifesto",
     "myStatement": "here"
   }
+  ]
 }
 ```
 
@@ -354,14 +355,14 @@ To conclude this chapter, and our "queer commentary"[^berlant] on the making of 
 
 **Get additional inspiration:**
 
-* *Dial* (2020) by Lai-Tze Fan & Nick Montfort, <http://thenewriver.us/dial/>, with JavaScript source code <https://nickm.com/fan_montfort/dial/>.
-* *Mexicans in Canada* by Amira Hanafi (2020), <http://amiraha.com/mexicansincanada/>.
+* *[Dial](http://thenewriver.us/dial/)* (2020) by Lai-Tze Fan & Nick Montfort, with JavaScript [source code](https://nickm.com/fan_montfort/dial/).
+* *[Mexicans in Canada](http://amiraha.com/mexicansincanada/)* by Amira Hanafi (2020).
 * *A House of Dust* by Alison Knowles and James Tenney (1967), reimplemented by Nick Montfort for *Memory Slam* (2014), <https://nickm.com/memslam/a_house_of_dust.html>.
 * *Corpora - A repository of JSON files* by Darius Kazemi (n.d.), <https://github.com/dariusk/corpora/tree/master/data>.
-* *e-lit collection1*, <http://collection.eliterature.org/1/>.
-* *e-lit collection2*, <http://collection.eliterature.org/2/>.
-* *e-lit collection3*, <http://collection.eliterature.org/3/>.
-* *RiTa library* by Daniel Howe (2006-ongoing), <https://rednoise.org/rita/>.
+* *[e-lit collection1](http://collection.eliterature.org/1/)*.
+* *[e-lit collection2](http://collection.eliterature.org/2/)*.
+* *[e-lit collection3](http://collection.eliterature.org/3/)*.
+* *[RiTa library](https://rednoise.org/rita/)* by Daniel Howe (2006-ongoing).
 
 **Tasks (RunMe):**
 

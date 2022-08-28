@@ -32,7 +32,7 @@ function draw() {
     //line(0,10,10,0); //example of forward slash
     line(x, y+spacing, x+spacing, y);
   }
-  x+=10;
+  x+=spacing;
   if (x > width) {
     x = 0;
     y += spacing;

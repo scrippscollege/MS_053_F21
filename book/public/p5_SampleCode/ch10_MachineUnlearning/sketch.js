@@ -65,6 +65,8 @@ function generate() {
           console.log("error: " + err);
         }else{
           select('#status').html('Ready!');
+          //remove the characters after the last space
+          result.sample = result.sample.slice(0, result.sample.lastIndexOf(" "));
           select('#result').html(txt + result.sample);
           runningInference = false;
         }

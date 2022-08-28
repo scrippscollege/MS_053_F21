@@ -1,5 +1,7 @@
 # About the book:
 
+The web version: https://aesthetic-programming.net/
+Git/Source:
 - About the book (https://gitlab.com/aesthetic-programming/book/-/tree/master/source)
 - Table of contents (https://gitlab.com/aesthetic-programming/book/-/blob/master/source/Table_Of_Contents.md)
 - Preface (https://gitlab.com/aesthetic-programming/book/-/tree/master/source/0-Preface)
@@ -20,22 +22,21 @@
 - Selected student projects (https://gitlab.com/aesthetic-programming/book/-/blob/master/source/showcase.md)
 - Acknowledgements (https://gitlab.com/aesthetic-programming/book/-/blob/master/source/acknowledgments.md)
 
-## The sample code (public folder):
+## Sample code (public folder):
 
 RunMe: https://aesthetic-programming.gitlab.io/book/
 
 Repository: https://gitlab.com/aesthetic-programming/book/-/tree/master/public/p5_SampleCode
 
-## All the flowchart (graphviz folder):
+## All flowcharts (graphviz folder):
 
 Source: https://gitlab.com/aesthetic-programming/book/-/tree/master/graphviz
-
 
 # Website & publication
 
 Both the website and publication are using pelican and have individual themes.
 
-## Installing requirements
+## Installation
 
 To generate the website it is necessary to install pelican and a few other pyton libraries.
 
@@ -63,7 +64,7 @@ For development it is practical to use pelican's reload option which causes the 
 pelican -lr -s pelicanconf_web.py
 ```
 
-If your encounter errors regarding "$HOME/.local/bin not in PATH", you can type this in the terminal: `source ~/.profile, or` and retry the command above. 
+If your encounter errors regarding "$HOME/.local/bin not in PATH", you can type this in the terminal: `source ~/.profile, or` and retry the command above.
 
 The site is now accessible through <http://localhost:8000>
 
@@ -77,7 +78,7 @@ pelican -s publishconf.py
 
 The generated site is written to the folder `output`. Upload those files to the server using your preferred method.
 
-#### On-going website update
+#### On-going website updates
 
 *Assume pelican has been setup in the local machine with your own domain path (`SITEURL` in `publishconf.py`)*
 

@@ -1,7 +1,7 @@
 Title: 2. Variable geometry
 Order: 2
 page_order: 2
-sketch: 
+sketch:
 download_sketch_link: https://gitlab.com/aesthetic-programming/book/-/archive/master/_Book-master.zip?path=public/p5_SampleCode/ch2_VariableGeometry
 
 ![flowchart](ch2_0.svg)
@@ -264,7 +264,7 @@ console.log("hello" + "world");
 1. Examine existing geometric emojis (<https://gitlab.com/aesthetic-programming/book/-/blob/master/source/2-VariableGeometry/emojis.jpeg>) or those available on your mobile phone,
 can you describe about the shape of an emoji? what constitutes a face? What essential geometric elements do you need for a particular facial expression? What has been lost in translation?
 2. Reflect upon the complexity of human emotions, and their caricatures. What is your experience using emojis? What are the cultural and political implications of emojis (you might refer to the reading and introduction above)?
-3. Beyond the face, take a look at more emojis (<https://www.pngfind.com/mpng/ohwmTJ_all-the-emojis-available-on-facebook-russian-revolution/>).[^emojis2] Is there anything you want to add?
+3. Beyond the face, take a look at more emojis (<https://www.pngfind.com/pngs/m/90-903456_all-the-emojis-available-on-facebook-russian-revolution.png>).[^emojis2] Is there anything you want to add?
 4. Experiment with p5.js. How do you translate your thoughts into lines of code? You may want to print the coordinates of the mouse press in the web console area to get a more accurate position for your shapes.
 
 ## While()
@@ -297,16 +297,16 @@ The challenge then is to rethink normative geometries, to turn them upside down 
 
 **For additional inspiration:**
 
-* *AIMoji* by Process Studio (2019), <https://process.studio/works/aimoji-ai-generated-emoji/>, and as part of "Uncanny Values," Vienna Biennale (2019), <https://process.studio/works/uncanny-values/>.
+* *[AIMoji](https://process.studio/works/aimoji-ai-generated-emoji/)* by Process Studio (2019), as part of "[Uncanny Values](https://process.studio/works/uncanny-values/)," Vienna Biennale (2019).
 
 Some articles on emoji culture:
 
-* Steve Witt, "Chinese Characters as Ancient 'Emoji'," *Glocal Notes* (2015), <https://publish.illinois.edu/iaslibrary/2015/10/21/chinese-characters/>.
+* Steve Witt, "[Chinese Characters as Ancient 'Emoji'](https://publish.illinois.edu/iaslibrary/2015/10/21/chinese-characters/)," *Glocal Notes* (2015).
 * Michael Grothaus, "Women Finally Get a Menstruation Emoji," *Fastcompany* (2019), <https://www.fastcompany.com/90302946/women-finally-get-a-menstruation-emoji>.
 
 **Tasks (RunMe):**
 
-Explore shapes, geometries, and other related syntax (via p5.js references) and design two emojis, <https://p5js.org/reference/>.
+Explore shapes, geometries, and other related syntax (via [p5.js references](https://p5js.org/reference/)) and design two emojis.
 
 **Questions to think about (ReadMe):**
 
@@ -317,7 +317,6 @@ Explore shapes, geometries, and other related syntax (via p5.js references) and 
 ## Required reading
 
 * Roel Roscam Abbing, Peggy Pierrot and Femke Snelting, "Modifying the Universal," in Helen Pritchard, Eric Snodgrass & Magda Tyżlik-Carver, eds., *Executing Practices* (London: Open Humanities Press, 2018), 35-51, <http://www.data-browser.net/db06.html>.
-* p5.js | Simple Shapes, <https://p5js.org/examples/hello-p5-simple-shapes.html>.
 * Daniel Shiffman, "1.3,1.4,2.1,2.2: Code! Programming with p5.js," (2018) <https://www.youtube.com/watch?v=yPWkPOfnGsw&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=2>.
 * Femke Snelting, "Other Geometries," *transmediale journal* 3, October 31 (2019), <https://transmediale.de/content/other-geometries>.
 
@@ -326,6 +325,8 @@ Explore shapes, geometries, and other related syntax (via p5.js references) and 
 * Crystal Abidin and Joel Gn, eds., "Histories and Cultures of Emoji Vernaculars," *First Monday* 23, no. 9, September (2018), <https://firstmonday.org/ojs/index.php/fm/issue/view/607>.
 * Christian Ulrik Andersen and Geoff Cox, eds., *A Peer-Reviewed Journal About Machine Feeling* 8, no. 1 (2019), <https://aprja.net//issue/view/8133>.
 * Derek Robinson, "Variables," in Matthew Fuller, ed., *Software Studies: A Lexicon* (Cambridge, MA: MIT Press, 2008).
+* Xin Xin, "1.2 2D Primitives - p5.js Tutorial," (2020) <https://www.youtube.com/watch?v=hISICBkFa4Q>.
+* Xin Xin, "1.3 Color and blendMode() - p5.js Tutorial," (2020) <https://www.youtube.com/watch?v=fTEvHLLwSBE>.
 
 ## Notes
 

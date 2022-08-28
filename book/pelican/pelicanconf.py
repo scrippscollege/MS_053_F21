@@ -16,7 +16,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
@@ -42,8 +42,8 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-#PAGE_PATHS = ['../source']
-STATIC_PATHS = ['content']
+PAGE_PATHS = ['../source']
+STATIC_PATHS = ['../content']
 TYPOGRIFY = True
 THEME = 'theme/aesthetic-programming'
 

@@ -133,17 +133,17 @@ RunMe
 
 There are three areas that can help you to zoom in on the program to slow down and adjust the size.
 
-1. `let grid_space = 5;` in Line 2: If you change the value to 10, everything will be enlarged.      
-2. `frameRate(20);` in Line 26: Lower the frame rate value to help slow down the program.
-3. `draw()` in Line 28: This function contains a for-loop where *n* is the ant's number of steps. If so desired you can reduce the `n < 100` to `n < 1` (in Line 31), i.e `for (let n = 0; n < 100; n++) {` this instructs the program to only process *n* steps per frame.
+1. `let grid_space = 5;` in Line 24: If you change the value to 10, everything will be enlarged.      
+2. `frameRate(20);` in Line 48: Lower the frame rate value to help slow down the program.
+3. `draw()` in Line 50: This function contains a for-loop where *n* is the ant's number of steps. If so desired you can reduce the `n < 100` to `n < 1` (in Line 31), i.e `for (let n = 0; n < 100; n++) {` this instructs the program to only process *n* steps per frame.
 
 Instead of going through the code line by line, the following shows what each function does.
 
-* `function setup()` in Line 17: To setup the canvas size, initiate the ant's head direction, frame rate, color, and to prepare drawing the background grid structure.
-* `function drawGrid()` in Line 56: To divide the canvas into a grid.
+* `function setup()` in Line 39: To setup the canvas size, initiate the ant's head direction, frame rate, color, and to prepare drawing the background grid structure.
+* `function drawGrid()` in Line 78: To divide the canvas into a grid.
 * `function draw()`: This main function checks the two rules that apply for *Langton's Ant* and change the color of cells.
-* `function nextMove()` in Line 74: The four directions are structured in a number format so that the variable `dir++` can be used to change the ant's direction by implementing the increment and decrement of the ant's direction in programming terms (i.e `dir++` or `dir--`). Each different direction (UP, RIGHT, DOWN, LEFT) corresponds to moving forward along either the horizontal (xPos) or the vertical (yPos) axis on the canvas.
-* `function checkEdges()` in Line 86: This function checks whether the ant moves out of frame. When it does, the program is written in such a way that it appears on the opposite side and continues.
+* `function nextMove()` in Line 96: The four directions are structured in a number format so that the variable `dir++` can be used to change the ant's direction by implementing the increment and decrement of the ant's direction in programming terms (i.e `dir++` or `dir--`). Each different direction (UP, RIGHT, DOWN, LEFT) corresponds to moving forward along either the horizontal (xPos) or the vertical (yPos) axis on the canvas.
+* `function checkEdges()` in Line 108: This function checks whether the ant moves out of frame. When it does, the program is written in such a way that it appears on the opposite side and continues.
 
 Technically speaking, there is no new syntax here as the two-dimensional arrays have already been covered briefly in the previous chapter. However, there is a new use of two-dimensional arrays and nested for-loops in the sample code.
 
@@ -239,13 +239,13 @@ Artist David Link built a functional replica of both the hardware and the origin
 **For additional inspiration:**
 
 * *{Software} Structure #003 A* by Casey Reas (2004), <https://whitney.org/exhibitions/programmed?section=1&subsection=6#exhibition-artworks>.
-* *Daily Art* by Saskia Freeke (2018), <https://sasj.nl/portfolio/daily/>.
-* *Generative Artistry* by Ruth John and Tim Holman (n.d.), <https://generativeartistry.com/tutorials/>.
-* *Generative Design - sketches* (n.d.), <http://www.generative-gestaltung.de/2/>, and source code, <https://github.com/generative-design/Code-Package-p5.js>.
+* *[Daily Art](https://sasj.nl/portfolio/daily/)* by Saskia Freeke (2018).
+* *[Generative Artistry](https://generativeartistry.com/tutorials/)* by Ruth John and Tim Holman (n.d.).
+* *[Generative Design - sketches](http://www.generative-gestaltung.de/2/)* (n.d.), and source code, <https://github.com/generative-design/Code-Package-p5.js>.
 * *GenArt* by Joseph Fiola (2016), with source code, <https://github.com/JosephFiola/GenArt>.
-* *Game of Life* by John Conway (1970), <https://web.archive.org/web/20181007111016/> & <http://web.stanford.edu/~cdebs/GameOfLife/>.
-* *Generative Tarot* by Melanie Hoff (2019), <https://www.melaniehoff.com/generativetarot/>, source code <https://github.com/melaniehoff/generative-tarot-p5js>.
-* *The Recode Project* (featuring projects from 1976-78), <http://recodeproject.com/>, and *Memory Slam* by Nick Montfort (2014), <http://nickm.com/memslam/>.
+* *Game of Life* by John Conway (1970): <https://web.archive.org/web/20181007111016/http://web.stanford.edu/~cdebs/GameOfLife>.
+* *Generative Tarot* by Melanie Hoff (2019), <https://www.melaniehoff.com/generativetarot>, source code <https://github.com/melaniehoff/generative-tarot-p5js>.
+* *[The Recode Project](http://recodeproject.com/)* (featuring projects from 1976-78), and *[Memory Slam](http://nickm.com/memslam/)* by Nick Montfort (2014).
 * *Solving Sol* by Brad Bouse (n.d.), an open project to implement Sol LeWitt's instructions in JavaScript  <https://github.com/wholepixel/solving-sol>.
 
 **Tasks (RunMe):**

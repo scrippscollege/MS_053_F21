@@ -530,3 +530,42 @@ section.right {
 .sketch--wrapper[data-active] {
     display: block;
 }
+
+#showcase h3 {
+    grid-column: span 2;
+}
+
+#showcase h4 {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+#showcase figure + p {
+    margin-top: var(--line-height);
+    padding-top: .25em;
+}
+
+#showcase > div.subsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: var(--line-height);
+    column-gap: var(--line-height);
+}
+
+#showcase figure {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+#showcase h4 ~ p, 
+#showcase h4 ~ ol, 
+#showcase h4 ~ ul, 
+#showcase h4 ~ blockquote, 
+#showcase h4 ~ table, 
+#showcase h4 ~ div, 
+#showcase h3 ~ h4 {
+    border-left: none;
+}

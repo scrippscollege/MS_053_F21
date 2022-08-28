@@ -310,9 +310,9 @@ This line of argument makes reference to the philosophy of Gilbert Simondon, to 
 
 **For additional inspiration:**
 
-* *LAUREN* by Lauren McCarthy (2017), <http://lauren-mccarthy.com/LAUREN>.
-* *nonsense* by Winnie Soon (2015), <http://siusoon.net/nonsense/>. (Read the comment in the source code for this project's intentions.)
-* *Facebook Demetricator* by Benjamin Grosser (2012-present), <https://bengrosser.com/projects/facebook-demetricator/>, and subsequent *Instagram Demetricator*, <https://bengrosser.com/projects/instagram-demetricator/> or *Twitter Demetricator*, <https://bengrosser.com/projects/twitter-demetricator/>.
+* *[LAUREN](http://lauren-mccarthy.com/LAUREN)* by Lauren McCarthy (2017).
+* *[nonsense](http://siusoon.net/nonsense)* by Winnie Soon (2015) (Read the comment in the source code for this project's intentions.)
+* *[Facebook Demetricator](https://bengrosser.com/projects/facebook-demetricator)* by Benjamin Grosser (2012-present), and subsequent *[Instagram Demetricator](https://bengrosser.com/projects/instagram-demetricator)*, or *[Twitter Demetricator](https://bengrosser.com/projects/twitter-demetricator)*.
 
 **Tasks (RunMe):**
 
@@ -333,7 +333,7 @@ This line of argument makes reference to the philosophy of Gilbert Simondon, to 
 * "p5.js examples - Interactivity 1," <https://p5js.org/examples/hello-p5-interactivity-1.html>.
 * "p5.js examples - Interactivity 2," <https://p5js.org/examples/hello-p5-interactivity-2.html>.
 * "p5 DOM reference," <https://p5js.org/reference/#group-DOM>.
-* Ulises A. Mejias and Nick Couldry, "Datafication," *Internet Policy Review* 8.4 (2019), <https://policyreview.info/concepts/datafication>. 
+* Ulises A. Mejias and Nick Couldry, "Datafication," *Internet Policy Review* 8.4 (2019), <https://policyreview.info/concepts/datafication>.
 
 ## Further reading
 

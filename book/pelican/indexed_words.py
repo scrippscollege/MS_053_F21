@@ -1,6 +1,8 @@
 from markdown.inlinepatterns import InlineProcessor
 from markdown.extensions import Extension
-from markdown.util import etree, AtomicString
+# from markdown.util import etree, AtomicString
+from markdown.util import AtomicString
+from lxml import etree
     
 INDEXED_WORDS_RE = r'\%([^\%]+)\%'
 INDEXED_WORDS_TAG = 'span'

@@ -386,9 +386,9 @@ Check out other works that refer to the throbber and how other people contextual
 
 * *Tanabata(七夕)* by Yurika Sayo (n.d.), with source code, <https://www.openprocessing.org/sketch/926326>.
 * *LOADING (THE BEAST 6:66/20:09)* by Gordan Savičić (2009), <https://www.yugo.at/processing/archive/index.php?what=loading>.
-* *The Best is Yet to Come* by Silvio Lorusso (2012), preloaders follow one another randomly and endlessly, <https://silviolorusso.com/work/the-best-is-yet-to-come/>.
+* *[The Best is Yet to Come](https://silviolorusso.com/work/the-best-is-yet-to-come/)* by Silvio Lorusso (2012), preloaders follow one another randomly and endlessly.
 * *DVD guy* by Constant Dullaart (2009), <https://www.youtube.com/playlist?list=PLCUGKK4FUkbMdnNii8qoRy9_tMvqE8XHB>, with the contextualization by Panke Gallery in Berlin, <http://www.upstreamgallery.nl/news/545/constant-dullaart-solo-show-nein-gag-at-panke-gallery-berlin>.
-* *Throb* by Winnie Soon (2018-19), <http://siusoon.net/throb/>.
+* *[Throb](http://siusoon.net/throb/)* by Winnie Soon (2018-19).
 
 **Task (RunMe):**
 
@@ -406,14 +406,14 @@ Use loops and any one of the transformational functions to redesign and program 
 ## Required reading
 
 * Hans Lammerant, "How humans and machines negotiate experience of time," in *The Techno-Galactic Guide to Software Observation*, 88-98, (2018), <https://www.books.constantvzw.org/nl/home/tgso>.
-* Daniel Shiffman, Courses 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 5.1, 5.2, 5.3, 7.1, 7.2, *Code! Programming with p5.js*, <https://www.youtube.com/watch?v=1Osb_iGDdjk> (2018). (Includes practical usage on conditional statements, loops, functions, and arrays.)
-* Wolfgang Ernst, “‘… Else Loop Forever’: The Untimeliness of Media,” (2009), https://www.medienwissenschaft.hu-berlin.de/de/medienwissenschaft/medientheorien/downloads/publikationen/ernst-else-loop-forever.pdf.
+* Daniel Shiffman, Courses 3.1, 3.3, 5.2, 9.1, 7.1, 7.2 *Code! Programming with p5.js*, (2018) <https://thecodingtrain.com/beginners/p5js/index.html>. (Includes practical usage on conditional statements, loops, functions, transformation, arrays)
+* Wolfgang Ernst, “‘… Else Loop Forever’: The Untimeliness of Media,” (2009), <https://www.musikundmedien.hu-berlin.de/de/medienwissenschaft/medientheorien/ernst-in-english/pdfs/medzeit-urbin-eng-ready.pdf>.
 
 ## Further reading
 
+* Daniel Shiffman, Courses 3.2, 3.4, 4.1, 4.2, 5.1, 5.3, *Code! Programming with p5.js*, <https://thecodingtrain.com/beginners/p5js/index.html> (2018). (Includes practical usage on conditional statements, loops, functions, and arrays.)
 * Wolfgang Ernst, *Chronopoetics: The Temporal Being and Operativity of Technological Media* (London: Rowman & Littlefield International, 2016), 63-95.
-* Winnie Soon, “Throbber: Executing Micro-temporal Streams,” *Computational Culture* 7, October 21 (2019), http://computationalculture.net/throbber-executing-micro-temporal-streams/.
-*	Wilfried Hou Je Bek, "Loop," in Fuller, ed., *Software Studies*.
+* Winnie Soon, “Throbber: Executing Micro-temporal Streams,” *Computational Culture* 7, October 21 (2019), <http://computationalculture.net/throbber-executing-micro-temporal-streams/>.
 * Derek Robinson, "Function," in Fuller, ed., *Software Studies*.
 
 ## Notes

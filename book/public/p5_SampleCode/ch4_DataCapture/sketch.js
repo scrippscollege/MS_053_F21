@@ -6,6 +6,8 @@ check:
 https://github.com/processing/p5.js-sound/blob/master/lib/p5.sound.js
 4. Face tracking library: https://github.com/auduno/clmtrackr
 5. p5js + clmtracker.js: https://gist.github.com/lmccart/2273a047874939ad8ad1
+note: the audio doesn't work on Firefox 96, the temp fix is to import older ver.
+See: https://aesthetic-programming.gitlab.io/book/ > #4 with older libraries
 */
 let button;
 let mic;
