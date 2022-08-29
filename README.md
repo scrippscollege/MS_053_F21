@@ -31,9 +31,9 @@ This is an introductory course in computation within context of media and art wi
 
 An online development platform. Our syllabus lives on GitHub. Essential.
 
-### Free [Replit account](https://replit.com), https://replit.com
+### [Brackets](https://brackets.io/) text editor (Free)
 
-Replit is a collaborative, in-browser IDE. Authenticate with your GitHub credentials.
+Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers.
 
 ### Free [p5js.org](https://p5js.org/) account:
 Sign in with your GitHub account
@@ -41,6 +41,8 @@ Sign in with your GitHub account
 ### Special project
 
 What would it mean to de-colonize code and a programming language?
+
+
 
 ## Recommended Material
 
@@ -50,9 +52,11 @@ What would it mean to de-colonize code and a programming language?
 
 ### *The Functional Art: An Introduction to Information Graphics and Visualization* Alberto Cairo
 
+
+
 ## Assessment
 
-### 40% P4E
+### 40% RunMes and ReadMes
 
 ### 40% Final project (proposal and completion)
 
